@@ -27,8 +27,20 @@ a {
   padding-right: 4px;
 }
 
+
 .links li {
   position: relative;
   display: inline-block;
   padding-right: 10px;
 }
+
+.links .button   {
+    background-color: #a6c9cf;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+img{
+    border-radius: 50% 15px;
+}
+
