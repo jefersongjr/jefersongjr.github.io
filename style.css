@@ -10,6 +10,19 @@ a {
   color: #a6c9cf;
 }
 
-#header a{
-    color: #6f8a93;
+#header a {
+  color: #6f8a93;
+}
+
+.links {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 4px;
+  float: center;
+}
+
+.links li{
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
 }
