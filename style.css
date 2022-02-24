@@ -4,3 +4,12 @@ body {
   line-height: 25px;
   background-color: #49515a;
 }
+
+a {
+  text-decoration: none;
+  color: #a6c9cf;
+}
+
+#header a{
+    color: #6f8a93;
+}
