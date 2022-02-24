@@ -8,22 +8,18 @@ body {
 
 a {
   text-decoration: none;
-  color: #a6c9cf;
+  color: #202d31;
 }
-#header a {
-    color: #6f8a93;
-    text-align: right;
-  }
 
 #header a {
-  color: #6f8a93;
+  color: #a6c9cf;
   text-align: right;
 }
 
-#header{
-    background-color: #202d31;
-    height: 35px;
-    width: 100%;
+#header {
+  background-color: #202d31;
+  height: 35px;
+  width: 100%;
 }
 .links {
   display: inline-block;
@@ -31,8 +27,8 @@ a {
   padding-right: 4px;
 }
 
-.links li{
-    position: relative;
-    display: inline-block;
-    padding-right: 10px;
+.links li {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
 }
