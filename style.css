@@ -1,31 +1,60 @@
+/*geral*/
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 25px;
-  background-color: #49515a;
+  line-height: 30px;
+  background-color: #b6c1d8;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #202d31;
+  color: #f3f2f6;
 }
 
-#header a {
-  color: #a6c9cf;
-  text-align: right;
+ul {
+  list-style-type: none;
 }
-
+/*Cabeçalho*/
 #header {
-  background-color: #202d31;
-  height: 35px;
   width: 100%;
+  background-color: #202630;
+  margin-bottom: 20px;
+  height: 50px;
+  font-size: 15px;
 }
+
+#nav {
+  float: right;
+  vertical-align: center; 
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#nav ul{
+  height: 100%;
+}
+#nav li { 
+  display: inline;
+  border-left: 3px solid #6c707e;
+  vertical-align: text-bottom;
+  justify-items: center;
+  
+}
+
+#nav li:last-of-type {
+  border-right: 3px solid #6c707e; ;
+} 
+/*
 .links {
   display: inline-block;
   padding-right: 4px;
 }
-
+/*
 .links li {
   position: relative;
   display: inline-block;
