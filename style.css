@@ -40,14 +40,22 @@ ul {
 #nav li { 
   display: inline;
   border-left: 3px solid #6c707e;
-  vertical-align: text-bottom;
-  justify-items: center;
-  
+  font-weight: bold;
+  padding: 16px 5px;
+}
+#nav li:last-of-type {
+  border-right: 3px solid #6c707e ;
 }
 
-#nav li:last-of-type {
-  border-right: 3px solid #6c707e; ;
-} 
+#nav li:hover {
+  background-color: #b6c1d8;
+}
+#nav a:hover{
+  color: #000;
+}
+#nav li:active {
+  background-color: #6c707e;
+}
 /*
 .links {
   display: inline-block;
