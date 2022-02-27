@@ -26,26 +26,30 @@ ul {
   margin-bottom: 20px;
   height: 50px;
   font-size: 15px;
+  position:fixed;
+  
 }
 
 #nav {
-  position:absolute;
+  position: absolute;
   top: 10px;
   right: 80px;
+  text-align: right;
     
 }
 #nav ul{
   height: 100%;
+  min-width: max-content;
 
 }
 #nav li { 
   display: inline;
-  border-left: 3px solid #6c707e;
+  border-left: 2px solid #6c707e;
   font-weight: bold;
   padding: 16px 5px;
 }
 #nav li:last-of-type {
-  border-right: 3px solid #6c707e ;
+  border-right: 2px solid #6c707e ;
 }
 
 #nav li:hover {
