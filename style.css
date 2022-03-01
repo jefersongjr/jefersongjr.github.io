@@ -90,7 +90,7 @@ ul {
 
 #description{
   float: right;
-  background-color: #202630;
+  background-color: #000;
   width: 300px;
   margin-top: 40px;
   margin-right: 350px;
@@ -103,45 +103,24 @@ ul {
 }
 h1{
   padding-bottom: 10px;
+  font-family: "Concert One";
+  color: #202630;
 }
 #button{
  display: block; 
 }
-/*
-.links {
-  display: inline-block;
-  padding-right: 4px;
-}
-/*
-.links li {
-  position: relative;
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.links .button {
-  background-color: #a6c9cf;
-  border-radius: 16px;
-  padding: 10px;
-}
-
-img {
-  border-radius: 50% 15px;
-}
-  border-radius: 50% 15px;
-
-h1 {
-  font-family: "Concert One";
-  color: #a6c9cf;
-}
 strong {
-  color: #202d31;
+  color: #6f8a93;
 }
 
 em {
   color: #6f8a93;
 }
 
-ul {
-  list-style-type: none;
+#habilidades ul li:nth-child(odd){
+  color: #202630;
+  text-decoration: underline;
+  font-weight: bold;
 }
+
+
