@@ -1,11 +1,10 @@
 import React from 'react';
+import { Button } from '@mui/material';
 
 const Header = () => {
   return (
-    <header>
-        
-    </header>
+    <Button variant="contained" >Olá </Button>
   );
 }
 
-export default Heder;
+export default Header;

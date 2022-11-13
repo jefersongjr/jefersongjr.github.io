@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from '../components/Header';
 
-const Carregando = () => {
+const Home = () => {
   return (
     <div className="loading-container">
+        <Header />
     </div>
   );
 }
 
-export default Carregando;
+export default Home;
