@@ -1,11 +1,21 @@
 import { createTheme } from '@mui/material';
 
 const theme = createTheme({
-  palette: {
+  palette: { 
     primary: {
       main: '#48BED9',
     },
+    secundary: {
+      main: '#48BED9',
+    },
   },
+  typography: {
+    h1: {
+      fontFamily: 'Gamja Flower, cursive',
+      fontSize: '1.5rem',
+      fontWeight: 900,
+    },
+  }
 });
 
 export default theme;
