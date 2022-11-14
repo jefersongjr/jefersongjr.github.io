@@ -3,10 +3,10 @@ import { createTheme } from '@mui/material';
 const theme = createTheme({
   palette: { 
     primary: {
-      main: '#48BED9',
+      main: '#3a9eb5',
     },
-    secundary: {
-      main: '#48BED9',
+    secondary: {
+      main: '#F2EBDC',
     },
   },
   typography: {
@@ -15,7 +15,8 @@ const theme = createTheme({
       fontSize: '1.5rem',
       fontWeight: 900,
     },
-  }
+  
+  },
 });
 
 export default theme;
@@ -26,3 +27,7 @@ export default theme;
 #9EF29B
 #F2EBDC
 */ 
+
+/*  <Typography variant="h1" component="div" gutterBottom color="secondary">
+                 Jeferson Gomes
+           </Typography> */
