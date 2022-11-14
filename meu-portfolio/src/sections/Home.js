@@ -1,11 +1,17 @@
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+
+
 import React from 'react';
-import Header from '../components/Header';
+import Wrapper from '../components/Wrapper';
 
 const Home = () => {
   return (
-    <div className="loading-container">
-        <Header />
-    </div>
+    <Wrapper sectionId="inicio" minHeight="100vh">
+      
+    </Wrapper>
   );
 }
 
