@@ -17,7 +17,7 @@ const Sobre = () => {
     sx={{
       backgroundColor: '#C7D4D9',
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection:  { xs: 'column', sm: 'row', md: 'row' },
       justifyContent: 'space-evenly',
       margin: 'auto',
       width: { xs: '100%', sm: '100%', md: '90%' },
@@ -51,9 +51,9 @@ const Sobre = () => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-evenly',
-      width: { xs: '100%', sm: '100%', md: '65%' },
+      width: { xs: '88%', sm: '65%', md: '65%' },
       backgroundColor: '#3a9eb5',
-      borderRadius: '0 10px 10px 0',
+      borderRadius: { xs: '0 0 10px 10px', sm: '0 10px 10px 0', md: '0 10px 10px 0' },
       padding: '20px',
       textAlign: 'justify',
     }}
@@ -63,7 +63,8 @@ const Sobre = () => {
             component="div"
             color="secondary.main"
             sx={{ 
-              fontFamily: 'Fredoka One, cursive'
+              fontFamily: 'Fredoka One, cursive',
+              fontSize: { xs: '25px', sm: '40px', md: '60px' }
             }}
           >
             Olá Mundo !
