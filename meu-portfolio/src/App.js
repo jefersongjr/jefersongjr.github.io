@@ -15,8 +15,8 @@ function App() {
         backgroundSize: 'cover',
       }}>
       <Home />
-      </main>
       <Sobre />
+      </main>
     </div>
   );
 }
