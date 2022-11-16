@@ -8,7 +8,7 @@ import Wrapper from '../components/Wrapper';
 
 const Home = () => {
   return (
-    <Wrapper sectionId='inicio' minHeight='100vh'>
+    <Wrapper sectionId='Início' minHeight='100vh'>
       <Box
         sx={{
           display: 'flex',
