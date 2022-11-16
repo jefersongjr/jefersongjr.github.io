@@ -27,31 +27,66 @@ const Home = () => {
       >
         <Box
           sx={{
+            padding: '0 10px',
             opacity: '100%',
-            backgroundColor: '#50F2F2',
           }}
         >
-          <h3>Bem Vindo ao meu Portfólio!</h3>
+           <Typography
+            variant="h3"
+            component="div"
+            color="secondary"
+            sx={{ 
+              flexGrow: 1, 
+              display: { xs: 'none', sm: 'block' },
+              color: '#01579b',
+              fontFamily: 'Gamja Flower, cursive',
+              fontSize: "2.5rem",
+              fontWeight: '900',    
+            }}
+          >
+         Bem Vindo ao meu Portfólio!
+
+          </Typography>
+       
         </Box>
 
         <Box
           sx={{
             opacity: '100%',
-            backgroundColor: '#50F2F2',
           }}
         >
-          <h2>Jeferson Gomes</h2>
-        </Box>
+           <Typography
+            variant="h2"
+            component="div"
+            color="secondary"
+            sx={{ 
+              flexGrow: 1, 
+              display: { xs: 'none', sm: 'block' },
+              color: '#1a237e',
+              fontFamily: 'Gamja Flower, cursive',
+              fontSize: "4rem",
+              fontWeight: '900',    
+            }}
+          >
+          Jeferson Gomes
+          </Typography>
 
-        <Box
-          sx={{
-            opacity: '100%',
-            backgroundColor: '#50F2F2',
-          }}
-        >
-          <h3>Desenvolvedor Full Stack</h3>
+          <Typography
+            variant="h2"
+            component="div"
+            color="secondary"
+            sx={{ 
+              flexGrow: 1, 
+              display: { xs: 'none', sm: 'block' },
+              color: '#01579b',
+              fontFamily: 'Gamja Flower, cursive',
+              fontSize: "1.5rem",
+              fontWeight: '900',    
+            }}
+          >
+          Desenvolvedor Full Stack
+          </Typography>
         </Box>
-        
 
         <Box
           sx={{
@@ -94,8 +129,21 @@ const Home = () => {
             <img src='https://img.icons8.com/clouds/512/resume.png' 
             width={50}
             alt='icone-likedin'/>
-            <p> Currículo</p>
-            </Button>
+          <Typography
+            variant="p"
+            component="div"
+            color="secondary"
+            sx={{ 
+              flexGrow: 1, 
+              display: { xs: 'none', sm: 'block' },
+              color: '#01579b',
+              fontFamily: 'Gamja Flower, cursive',
+              fontSize: "1rem",
+              fontWeight: '900',    
+            }}
+          >
+          Currículo
+          </Typography>            </Button>
 
                     
          <Button
@@ -115,32 +163,6 @@ const Home = () => {
             alt='icone-likedin'/>
             </Button>
           </Box>
-
-
-        {/* <Box
-          sx={{
-            width: '90%',
-            opacity: '100%',
-          }}
-        >
-        
-         <Button
-            variant="contained"
-            size="large"
-            component="a"
-            href="#contact"
-            sx={{
-              transition: '400ms',
-              width: '60px',
-              backgroundColor: '#80d8ff',
-            }}
-          >
-            <img src='https://img.icons8.com/doodle/512/github.png' 
-            width={50}
-            alt='icone-likedin'/>
-            </Button>
-          </Box>
-         */}
 
        
       </Box>
