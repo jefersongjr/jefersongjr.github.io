@@ -15,7 +15,7 @@ const Sobre = () => {
     <Wrapper sectionId='Sobre' minHeight='100vh'>
     <Box
     sx={{
-      backgroundColor: '#F2EBDC',
+      backgroundColor: '#C7D4D9',
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-evenly',
@@ -27,29 +27,48 @@ const Sobre = () => {
     >
       <Box
     sx={{
+      display: 'flex',
+      justifyContent: 'center',
       width: { xs: '100%', sm: '100%', md: '50%' },
       verticalAlign: 'center',
+      maxWidth: 'fit-content',
+      maxHeight: 'fit-content',
+      margin: 'auto auto'
     }}
     >
-      <img 
-  
+      <img
       src={ Perfil } 
         alt='foto de perfil' 
         height= '55%' 
-        width='55%' 
+        width='55%'
         style={{ 
           borderRadius: '50%',
-          margin: 'auto auto',
-          border: '4px solid #01579b '
+          border: '4px solid #3a9eb5',
           } }/>
       </Box>
     <Box
     sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-evenly',
       width: { xs: '100%', sm: '100%', md: '65%' },
-      backgroundColor: '#01579b',
-      borderRadius: '0 10px 10px 0'
+      backgroundColor: '#3a9eb5',
+      borderRadius: '0 10px 10px 0',
+      padding: '20px',
+      textAlign: 'justify',
     }}
     >
+      <Typography
+            variant="h2"
+            component="div"
+            color="secondary.main"
+            sx={{ 
+              fontFamily: 'Fredoka One, cursive'
+            }}
+          >
+            Olá Mundo !
+          </Typography>
+
         <Typography
             variant="p"
             component="div"
@@ -58,26 +77,26 @@ const Sobre = () => {
               fontFamily: 'Fredoka One, cursive'
             }}
           >
-            Olá Mundo ! Meu nome é Jeferson Gomes, tenho 31 anos e sou aluno de Sistemas de informações e
+            Meu nome é Jeferson Gomes, tenho 31 anos e sou aluno de Sistemas de informações e
             sou Desenvolvedor Web Full Stack em formação pela trybe.
           </Typography>
 
           <Typography
             variant="p"
             component="div"
-            color="#01579b"
+            color="secondary.main"
             sx={{ 
               fontFamily: 'Fredoka One, cursive'
             }}
           >
-            Sou apaixonado em aprender novas habilidades e procurar andar em constante evolução. Sou uma pessoa
+            Sou apaixonado por tecnologia e em aprender novas habilidades e procuro andar em constante evolução. Sou uma pessoa
             comunicativa e prezo muito pelas relações pessoais, conseguindo assim trablahar em grupo com bastante eficiência.
           </Typography>
 
           <Typography
             variant="p"
             component="div"
-            color="#01579b"
+            color="secondary.main"
             sx={{ 
               fontFamily: 'Fredoka One, cursive'
             }}
