@@ -90,7 +90,7 @@ const Sobre = () => {
             }}
           >
             Sou apaixonado por tecnologia e em aprender novas habilidades e procuro andar em constante evolução. Sou uma pessoa
-            comunicativa e prezo muito pelas relações pessoais, conseguindo assim trablahar em grupo com bastante eficiência.
+            comunicativa e prezo muito pelas relações pessoais, conseguindo assim trabalhar em grupo com bastante eficiência.
           </Typography>
 
           <Typography
