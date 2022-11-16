@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Home from './sections/Home';
 import island from './images/island.jpg'
+import Sobre from './sections/Sobre';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       }}>
       <Home />
       </main>
+      <Sobre />
     </div>
   );
 }

@@ -33,7 +33,7 @@ function Header(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton href={`#${ item }`} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -67,7 +67,7 @@ function Header(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} href={`#${ item }`} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
