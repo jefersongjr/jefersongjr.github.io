@@ -8,6 +8,7 @@ const theme = createTheme({
     secondary: {
       main: '#F2EBDC',
     },
+  
   },
   typography: {
     h1: {
