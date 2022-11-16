@@ -33,7 +33,7 @@ function Header(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton href={`#${ item }`} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -46,7 +46,7 @@ function Header(props) {
 
   return (
     <Box sx={{ display: 'flex' }} >
-      <AppBar component="nav" sx={{ px: "5rem" }}>
+      <AppBar component="nav" position='block' sx={{ px: "5rem" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -67,7 +67,7 @@ function Header(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} href={`#${item}`} sx={{ color: '#fff' }}>
+              <Button key={item} href={`#${ item }`} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}

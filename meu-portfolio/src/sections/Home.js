@@ -1,9 +1,7 @@
+import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
-
-import React from 'react';
 import Wrapper from '../components/Wrapper';
 
 const Home = () => {
@@ -18,7 +16,7 @@ const Home = () => {
           width: { xs: '100%', sm: '100%', md: '448px' },
           height: {xs: '350px' , sm: '320px', md: '320px'},
           padding: '15px 0',
-          margin: { xs: '12px 0', sm: '50px 5px', md: '80px' },
+          margin: { xs: '12px 0', sm: '50px 5px', md: '20px' },
           opacity: '80%',
           backgroundColor: '#80d8ff',
           borderRadius: '20px',
