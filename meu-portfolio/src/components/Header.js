@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Início', 'Sobre', 'Projetos', 'Contato'];
+const navItems = ['Início', 'Sobre', 'Tecnologias' ,'Projetos', 'Contato'];
 
 function Header(props) {
   const { window } = props;
