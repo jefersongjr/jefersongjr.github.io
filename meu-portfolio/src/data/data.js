@@ -51,6 +51,19 @@ export const stacks = [
     },
 
     {
+        name: 'MongoDB',
+        image: 'https://img.icons8.com/color/512/mongodb.png',
+    },
+
+    {
+        name: 'Sequelize',
+        image: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/sequelize_plain_logo_icon_146346.png',
+    },
+    {
+        name: 'Express',
+        image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
+    },
+    {
         name: 'Jest',
         image: 'https://img.icons8.com/external-tal-revivo-filled-tal-revivo/512/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-filled-tal-revivo.png',
     },
@@ -63,7 +76,11 @@ export const stacks = [
         image: 'https://camo.githubusercontent.com/7ecbd4531436e4f20c1dba52a4fd4ac367cfcc20a2f62cfe7a10f32da306afc6/687474703a2f2f636861696a732e636f6d2f696d672f636861692d6c6f676f2e706e67',
     },
     {
-        name: 'MongoDB',
-        image: 'https://img.icons8.com/color/512/mongodb.png',
+        name: 'SinonJSs',
+        image: 'https://sinonjs.org/assets/images/logo.png',
+    },
+    {
+        name: 'Mocha',
+        image: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mocha_plain_logo_icon_146426.png',
     },
 ]

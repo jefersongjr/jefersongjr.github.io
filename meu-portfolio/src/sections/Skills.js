@@ -11,7 +11,6 @@ import { stacks } from '../data/data'
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   textAlign: 'center',
-  width: '200px',
   height:'125px',
   color: theme.palette.text.secondary,
   display:'flex',
@@ -32,6 +31,17 @@ const Skills = () => {
     }}
     >
     <Wrapper sectionId='Tecnologias' minHeight='100vh'>
+    <Box
+    sx={{
+      display: 'flex',
+      flexDirection:  'column',
+      justifyContent: 'center',
+      margin: '0 auto',
+      width: { xs: '100%', sm: '100%', md: '97%' },
+      height: { xs: '100%', sm: '100%' },
+      borderRadius: '10px',
+    }}
+    >
     <Typography
             variant='h3'
             component='div'
@@ -44,7 +54,7 @@ const Skills = () => {
           >
             Principais Tecnologias: 
       </Typography>
-    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
+    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 15 }}>
         {stacks.map((stack) => (
           <Grid item xs={1} sm={2.5} md={3} key={stack.name}
           >
@@ -52,6 +62,7 @@ const Skills = () => {
           </Grid>
         ))}
       </Grid>
+      </Box>
     </Wrapper>
 
     </Box>
