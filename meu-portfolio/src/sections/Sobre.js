@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Perfil from '../images/perfil.jpeg';
 import Typography from '@mui/material/Typography';
 
+
 const Sobre = () => {
   return (
     <Box
