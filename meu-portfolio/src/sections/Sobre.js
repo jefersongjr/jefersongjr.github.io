@@ -21,7 +21,7 @@ const Sobre = () => {
       flexDirection:  { xs: 'column', sm: 'row', md: 'row' },
       justifyContent: 'space-evenly',
       margin: 'auto',
-      width: { xs: '100%', sm: '100%', md: '90%' },
+      width: { xs: '100%', sm: '100%', md: '97%' },
       height: { xs: '100%', sm: '100%', md: '450px' },
       borderRadius: '10px',
     }}
