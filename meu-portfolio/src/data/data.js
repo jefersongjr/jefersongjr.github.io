@@ -87,9 +87,61 @@ export const stacks = [
 
 export const projects = [
   {
-    name: 'Trybe Futebol Clube',
     stack: 'Back-End',
+    name: 'Trybe Futebol Clube',
     description: `Projeto em que foi criada API capaz de visualizar jogos de um campeonato, adicionar partidas em andamento, 
-    finalizar partidas, gerar uma tabela e fazer validações com JSON web token. `
+      finalizar partidas, gerar uma tabela e fazer validações com JSON web token. `,
+    img: 'https://raw.githubusercontent.com/jefersongjr/trybe-futebol-clube/main/app/frontend/src/images/previa.png',
+    stacks: ['NodeJs', 'Express', 'Docker'],
+    link: 'https://github.com/jefersongjr/trybe-futebol-clube',
+  },
+  
+  {
+    stack: 'Front-End',
+    name: 'Tests With RTL',
+    description: `Projeto em que tive que criar testes de integração para Aplicação React. Utilizando React Library Testing. `,
+    img: 'https://raw.githubusercontent.com/jefersongjr/tests-whith-RTL/main/public/react-testing-library.jpg',
+    stacks: ['RTL', 'Jest.js', 'Stryker Mutator'],
+    link: 'https://github.com/jefersongjr/tests-whith-RTL',
+
+  },
+
+  {
+    stack: 'Front-End',
+    name: 'Trivia Game',
+    description: `Jogo de Perguntas e respostas criado a partir de uma API , desenvolvido com React, Redux, CSS e os testes 
+            foram desenvolvidos com RTL`,
+    img: 'https://raw.githubusercontent.com/jefersongjr/trivia-game/main/public/previa.png',
+    stacks: ['ReactJs', 'CSS', 'Redux', 'RTL'],
+    link: 'https://github.com/jefersongjr/trivia-game',
+  },
+
+  {
+    stack: 'Back-End',
+    name: 'Talker Manager',
+    description: ` API de cadastro de talkers (palestrantes) em que será possível 
+            cadastrar, visualizar, pesquisar, editar e excluir informações. As Feramentas`,
+    img: 'https://raw.githubusercontent.com/jefersongjr/talker-manager/main/previa.png',
+    stacks: ['Docker', 'NodeJs', 'Express'],
+    link: 'https://github.com/jefersongjr/talker-manager',
+  },
+
+  {
+    stack: 'Front-End',
+    name: 'Solar System',
+    description: `Aplicação React, aonde fosse possível visualizar todos os planetas do sistema solar 
+                renderizados na tela e visualizar cartas com informações sobre missões espaciais.`,
+    img: 'https://raw.githubusercontent.com/jefersongjr/solar-system/main/public/previa.png',
+    stacks: ['React', 'CSS', 'JavaScript'],
+    link: 'https://github.com/jefersongjr/solar-system',
+  },
+
+  {
+    stack: 'Front-End',
+    name: 'Pixel Art',
+    description: `Projeto que explorava o conhecimento de Html e javascript, utilizando DOM, para criar um quadro de pintura no estilo pixelado`,
+    img: 'https://raw.githubusercontent.com/jefersongjr/pixels-art/main/preview.png',
+    stacks: ['Html', 'Css', 'JavaScript'],
+    link: 'https://github.com/jefersongjr/pixels-art',
   },
 ]
