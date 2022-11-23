@@ -84,3 +84,12 @@ export const stacks = [
         image: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mocha_plain_logo_icon_146426.png',
     },
 ]
+
+export const projects = [
+  {
+    name: 'Trybe Futebol Clube',
+    stack: 'Back-End',
+    description: `Projeto em que foi criada API capaz de visualizar jogos de um campeonato, adicionar partidas em andamento, 
+    finalizar partidas, gerar uma tabela e fazer validações com JSON web token. `
+  },
+]
