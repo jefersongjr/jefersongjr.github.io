@@ -55,7 +55,11 @@ function Header(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-           xxx
+           <img 
+            src='https://img.icons8.com/stickers/512/menu-rounded.png' 
+            alt='menu-icon'
+            width='50px'
+            />
           </IconButton>
           <Typography
             variant="h1"
@@ -65,9 +69,9 @@ function Header(props) {
           >
             Jeferson Gomes
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box  sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} href={`#${ item }`} sx={{ color: '#fff' }}>
+              <Button key={item} href={`#${ item }`} sx={{ color: '#fff', fontFamily: 'Fredoka One, cursive' }}>
                 {item}
               </Button>
             ))}
