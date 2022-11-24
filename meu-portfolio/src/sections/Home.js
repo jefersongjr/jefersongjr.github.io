@@ -127,7 +127,8 @@ const Home = () => {
               }}
             >
               Currículo
-            </Typography>            </Button>
+            </Typography>            
+            </Button>
 
 
           <Button

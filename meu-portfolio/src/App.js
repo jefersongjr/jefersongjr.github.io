@@ -4,6 +4,7 @@ import island from './images/island.jpg'
 import Sobre from './sections/Sobre';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Sobre />
       <Skills />
       <Projects />
+      <Contact />
       </main>
     </div>
   );
