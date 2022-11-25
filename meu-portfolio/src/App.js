@@ -5,6 +5,7 @@ import Sobre from './sections/Sobre';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Projects />
       <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

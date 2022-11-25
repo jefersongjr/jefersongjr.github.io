@@ -39,7 +39,7 @@ const Contact = () => {
                     justifyContent: 'space-between',
                     flexDirection: 'column',
                     textAlign: 'center',
-                    width: { xs: '100%', sm: '100%', md: '100%' },
+                    width: { xs: '100%', sm: '100%', md: '96%' },
                     height: { xs: '350px', sm: '320px', md: '500px' },
                     padding: '15px 0',
                     margin: { xs: '12px 0', sm: '50px 5px', md: '20px' },
