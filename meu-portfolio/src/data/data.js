@@ -1,3 +1,8 @@
+import mocha from '../images/mocha.png';
+import express from '../images/express.png'
+import sequelize from '../images/sequelize.png'
+
+
 export const stacks = [
     {
         name: 'GitHub',
@@ -57,11 +62,11 @@ export const stacks = [
 
     {
         name: 'Sequelize',
-        image: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/sequelize_plain_logo_icon_146346.png',
+        image: sequelize,
     },
     {
         name: 'Express',
-        image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
+        image: express,
     },
     {
         name: 'Jest',
@@ -81,7 +86,7 @@ export const stacks = [
     },
     {
         name: 'Mocha',
-        image: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mocha_plain_logo_icon_146426.png',
+        image: mocha,
     },
 ]
 
