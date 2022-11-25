@@ -4,33 +4,17 @@
 
 ##  🚀📋 Sobre:
 
-**Trivia Game** foi um projeto desenvolvido em grupo por ,[Jeferson Gomes](https://www.linkedin.com/in/jefersongjr/),
-[Fernanda Vidal](https://github.com/Fernanda-Vidal), [Maraíse Medeiros](https://github.com/Maraise-hub), [Roberto Luna](https://github.com/RobertoDLuna)
-e [Caio Pereira](https://github.com/caiopa),
-durante o curso de formação de desenvolvimento Full Stack da [Trybe](https://www.betrybe.com/), durante o módulo de Front End.
-Aonde desenvolvemos um Jogo de Perguntas e respostas, com uma página de Login, uma página de jogo e uma página de Ranking.
+Meu portfólio Web
 
 
-  Veja o resultado clicando [Aqui](https://trivia-game-xi.vercel.app) :video_game:
+  Veja o resultado clicando [Aqui](https://jefersongjr.vercel.app/) 🚧
 
 ## 🛠️ Construído com: 
 
-* HTML5
-* CSS3
-* JavaScript ES6+
 * React.js
-* React Router
-* Redux
-* Redux thunk
-
-## :pencil: Metodologia
-
-* Kanban
+* Material UI
 
 ## :computer: Skills Desenvolvidas:
 
-  * Trabalhar em grupo utilizando metodologias de desenvolvimento ágil
-  * Desenvolver uma aplicação React utilizando React Router
-  * Desenvolver uma aplicação usando Redux
-  * Consumir dados de uma API pública
+  * Desenvolver uma Portfólio utilizand React e o Framework Material UI.
 
