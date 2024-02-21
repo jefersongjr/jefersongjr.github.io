@@ -17,11 +17,16 @@ header {
     padding: 0 50px;
   }
 }
+header .mobile-menu {
+  display: "flex";
+}
+header .hidden {
+  display: none;
+}
 header .menu-button {
   display: none;
   background-color: black;
   border: none;
-  display: flex;
   justify-content: center;
 }
 header .menu-button:hover {
@@ -38,11 +43,6 @@ header .menu-button:active {
 }
 header nav {
   width: 50%;
-}
-@media (max-width: 1199px) {
-  header nav {
-    display: none;
-  }
 }
 header nav ul {
   align-items: center;

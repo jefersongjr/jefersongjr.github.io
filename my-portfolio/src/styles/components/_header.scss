@@ -10,11 +10,18 @@ header {
   @include mq(l) {
     padding: 0 50px;
   }
+  .mobile-menu {
+    display: 'flex';
+  }
+  
+  .hidden {
+    display: none;
+  }
+
   .menu-button {
     display: none;
     background-color: black;
     border: none;
-    display: flex;
     justify-content: center;
     &:hover {
      background-color: $third;
@@ -29,9 +36,6 @@ header {
   }
   nav {
     width: 50%;
-    @include mq(xs) {
-      display: none;
-    }
     ul {
       @include flexSpaceBeetween();
       list-style: none;
@@ -53,6 +57,7 @@ header {
       }
     }
   }
+
   div {
     @include flexSpaceBeetween();
     .contact-button {
