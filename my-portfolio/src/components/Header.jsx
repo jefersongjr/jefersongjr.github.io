@@ -1,7 +1,9 @@
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import logo from '../assets/logotipo.png';
 import logoGithub from '../assets/icons-github.png';
 import logoLinkedin from '../assets/icons-linkedin.png';
+import iconMenu from '../assets/menu-icon.png';
 import portuguese from '../assets/icons-brazil.png';
 import english from '../assets/icons-usa.png';
 
@@ -42,22 +44,37 @@ const sections = [
     href: '#contact',
   },
 ];
+const SIZE = 600;
 
 function Header({ setLanguage, language }) {
+  const [menuVisible, setMenuVisible] = useState(true);
+
+  const onClick = () => {
+    setMenuVisible(!menuVisible);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > SIZE) {
+        setMenuVisible(true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <header>
-      <img src={ logo } alt="meu logo" width="100px" />
-      <nav>
-        <ul>
-          {sections.map(({ name, href }) => (
-            <li key={ name[language] }>
-              <a href={ href }>
-                {name[language]}
-              </a>
-            </li>))}
-        </ul>
-      </nav>
-      <div>
+      <img src={ logo } alt="meu logo" className="logo" width="100px" />
+      <button
+        onClick={ onClick }
+        className="menu-button"
+      >
+        <img src={ iconMenu } alt="Hamburguer menu  " />
+      </button>
+      <div className="button-container">
         <button onClick={ () => setLanguage('BR') }>
           <img src={ portuguese } alt="" width="25px" />
           BR
@@ -66,9 +83,29 @@ function Header({ setLanguage, language }) {
           <img src={ english } alt="" width="25px" />
           EN
         </button>
-        <img src={ logoGithub } alt="logo-github" width="25px" />
-        <img src={ logoLinkedin } alt="logo-linkedin" width="30px" />
+        <img
+          src={ logoGithub }
+          alt="logo-github"
+          width="25px"
+          className="contact-button"
+        />
+        <img
+          src={ logoLinkedin }
+          alt="logo-linkedin"
+          width="30px"
+          className="contact-button"
+        />
       </div>
+      <nav>
+        <ul className={ menuVisible ? 'mobile-menu' : 'hidden' }>
+          {sections.map(({ name, href }) => (
+            <li key={ name[language] }>
+              <a href={ href }>
+                {name[language]}
+              </a>
+            </li>))}
+        </ul>
+      </nav>
     </header>
   );
 }

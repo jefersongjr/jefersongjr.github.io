@@ -1,0 +1,97 @@
+@import '../mixin';
+
+header {
+  @include flexSpaceBeetween();
+  background-color: $primary;
+  flex-flow: row wrap;
+  padding: 5px 100px;
+  @include mq(l) {
+    padding: 0 20px;
+  }
+  .top-header {
+    @include flexSpaceBeetween();
+  }
+  .logo {
+    order: 1;
+  }
+  .mobile-menu {
+    display: 'flex';
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .menu-button {
+    display: none;
+    background-color: black;
+    border: none;
+    justify-content: center;
+    &:hover {
+     background-color: $third;
+    }
+    &:active {
+      width: 70px;
+      background-color: darkviolet;
+     }
+    @include mq(xs) {
+      display: flex;
+      order: 2;
+    }
+  }
+  nav {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    min-height: max-content;
+    order: 1;
+    flex-direction: column;
+    @include mq(xs) {
+      order: 4;
+      flex-grow: 1;
+      width: 70%;
+    }
+    ul {
+      @include flexSpaceBeetween();
+      list-style: none;
+      color: $secondary;
+      @include mq(xs){
+        flex-direction: column;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        &:hover {
+          background-color: $third;
+        }
+        a {
+          color: $secondary;
+          text-decoration: none;
+          font-size: 18px;
+          font-family: "Orbitron", sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  div {
+    @include flexSpaceBeetween();
+    order: 3;
+    .contact-button {
+      @include mq(s) {
+        display: none;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      border-radius: 16px;
+      height: 40px;
+      justify-content: space-evenly;
+      opacity: 0.8;
+      width: 65px;
+    }
+  }
+}
