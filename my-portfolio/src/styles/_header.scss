@@ -8,22 +8,43 @@
   justify-content: space-between;
 }
 
-.header-container {
+header {
   @include flexSpaceBeetween();
   background-color: $primary;
-  padding: 2px 50px;
-}
-
-.nav-container {
-  width: 60%;
-}
-
-.navigation {
-  @include flexSpaceBeetween();
-  list-style: none;
-  color: $secondary;
-}
-
-.icons-container {
-  @include flexSpaceBeetween();
+  padding: 5px 120px;
+  nav {
+    width: 50%;
+  }
+  ul {
+    @include flexSpaceBeetween();
+    list-style: none;
+    color: $secondary;
+    li {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      &:hover {
+        background-color: $third;
+      }
+    }
+    a {
+      color: $secondary;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: "Orbitron", sans-serif;
+      font-weight: bold;
+    }
+  }
+  div {
+    @include flexSpaceBeetween();
+  }
+  button {
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+    opacity: 0.8;
+    width: 65px;
+  }
 }

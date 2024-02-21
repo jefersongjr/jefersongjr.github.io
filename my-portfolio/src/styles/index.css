@@ -1,17 +1,16 @@
-.header-container {
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+header {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
-  padding: 2px 50px;
+  padding: 5px 120px;
 }
-
-.nav-container {
-  width: 60%;
+header nav {
+  width: 50%;
 }
-
-.navigation {
+header ul {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -19,12 +18,35 @@
   list-style: none;
   color: white;
 }
-
-.icons-container {
+header ul li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+header ul li:hover {
+  background-color: purple;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+}
+header div {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+header button {
+  align-items: center;
+  border-radius: 16px;
+  display: flex;
+  height: 40px;
+  justify-content: space-evenly;
+  opacity: 0.8;
+  width: 65px;
 }
 
 * {
