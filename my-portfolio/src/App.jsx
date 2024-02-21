@@ -1,10 +1,13 @@
-import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <>
-      <p>Olá</p>
-    </>
+    <div>
+      <Header />
+      <main>
+        OLA
+      </main>
+    </div>
   );
 }
 
