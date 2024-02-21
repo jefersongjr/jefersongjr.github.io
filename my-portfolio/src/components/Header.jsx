@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import logo from '../assets/logotipo.png';
 import logoGithub from '../assets/icons-github.png';
 import logoLinkedin from '../assets/icons-linkedin.png';
@@ -44,10 +45,10 @@ const sections = [
 
 function Header({ setLanguage, language }) {
   return (
-    <header className="header-container">
+    <header>
       <img src={ logo } alt="meu logo" width="100px" />
-      <nav className="nav-container">
-        <ul className="navigation">
+      <nav>
+        <ul>
           {sections.map(({ name, href }) => (
             <li key={ name[language] }>
               <a href={ href }>
@@ -56,12 +57,12 @@ function Header({ setLanguage, language }) {
             </li>))}
         </ul>
       </nav>
-      <div className="icons-container">
-        <button onClick={ () => setLanguage('BR') } className="language-button">
+      <div>
+        <button onClick={ () => setLanguage('BR') }>
           <img src={ portuguese } alt="" width="25px" />
           BR
         </button>
-        <button onClick={ () => setLanguage('EN') } className="language-button">
+        <button onClick={ () => setLanguage('EN') }>
           <img src={ english } alt="" width="25px" />
           EN
         </button>
@@ -71,5 +72,10 @@ function Header({ setLanguage, language }) {
     </header>
   );
 }
+
+Header.propTypes = {
+  setLanguage: PropTypes.func.isRequired,
+  language: PropTypes.string.isRequired,
+};
 
 export default Header;
