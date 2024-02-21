@@ -1,11 +1,18 @@
-import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
 
 function App() {
+  const [language, setLanguage] = useState('EN');
+
   return (
-    <>
-      <p>Olá</p>
-    </>
+    <div>
+      <Header setLanguage={ setLanguage } language={ language } />
+      <main>
+        OLA
+        <p>{language}</p>
+      </main>
+    </div>
   );
 }
 
-export default App
+export default App;
