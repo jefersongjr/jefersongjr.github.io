@@ -1,0 +1,18 @@
+@import './variable.scss';
+
+@mixin flexSpaceBeetween{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.class-container {
+  @include flexSpaceBeetween();
+  background-color: $primary;
+  
+}
+
+.navigation {
+  @include flexSpaceBeetween();
+  color: $secondary;
+}
