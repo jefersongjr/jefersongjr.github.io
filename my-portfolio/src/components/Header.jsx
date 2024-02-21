@@ -44,6 +44,7 @@ const sections = [
     href: '#contact',
   },
 ];
+const SIZE = 600;
 
 function Header({ setLanguage, language }) {
   const [menuVisible, setMenuVisible] = useState(true);
@@ -54,7 +55,7 @@ function Header({ setLanguage, language }) {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 600) {
+      if (window.innerWidth > SIZE) {
         setMenuVisible(true);
       }
     };
