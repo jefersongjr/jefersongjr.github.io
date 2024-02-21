@@ -1,9 +1,9 @@
 function Header() {
   return (
-    <header>
+    <header className="header-container">
       <img src="/logo.png" alt="meu logo" />
-      <nav>
-        <ul>
+      <nav className="class-container">
+        <ul className="navigation">
           <li>HOME</li>
           <li>ABOUT</li>
           <li>PROJECTS</li>
