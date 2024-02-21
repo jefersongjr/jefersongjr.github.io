@@ -7,8 +7,42 @@ header {
   background-color: black;
   padding: 5px 120px;
 }
+@media (max-width: 575px) {
+  header {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding: 0 50px;
+  }
+}
+header .menu-button {
+  display: none;
+  background-color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+header .menu-button:hover {
+  background-color: purple;
+}
+header .menu-button:active {
+  width: 70px;
+  background-color: darkviolet;
+}
+@media (max-width: 1199px) {
+  header .menu-button {
+    display: flex;
+  }
+}
 header nav {
   width: 50%;
+}
+@media (max-width: 1199px) {
+  header nav {
+    display: none;
+  }
 }
 header nav ul {
   align-items: center;
@@ -38,6 +72,11 @@ header div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 575px) {
+  header div .contact-button {
+    display: none;
+  }
 }
 header div button {
   display: flex;

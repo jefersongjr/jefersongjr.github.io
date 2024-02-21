@@ -1,19 +1,37 @@
-@import './variable.scss';
-
-
-@mixin flexSpaceBeetween{
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+@import '../mixin';
 
 header {
   @include flexSpaceBeetween();
   background-color: $primary;
   padding: 5px 120px;
+  @include mq(s) {
+    padding: 0 10px;
+  }
+  @include mq(l) {
+    padding: 0 50px;
+  }
+  .menu-button {
+    display: none;
+    background-color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    &:hover {
+     background-color: $third;
+    }
+    &:active {
+      width: 70px;
+      background-color: darkviolet;
+     }
+    @include mq(xs) {
+      display: flex;
+    }
+  }
   nav {
     width: 50%;
+    @include mq(xs) {
+      display: none;
+    }
     ul {
       @include flexSpaceBeetween();
       list-style: none;
@@ -37,6 +55,11 @@ header {
   }
   div {
     @include flexSpaceBeetween();
+    .contact-button {
+      @include mq(s) {
+        display: none;
+      }
+    }
     button {
       display: flex;
       align-items: center;

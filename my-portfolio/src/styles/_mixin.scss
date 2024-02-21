@@ -1,0 +1,39 @@
+@use "sass:map";
+@import './variable';
+
+@mixin flexSpaceBeetween{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+// @mixin mq($key) {
+//   @if map.has-key($breakpoints, $key) {
+//     $size: map.get($breakpoints, $key);
+
+//     @media (min-width: $size) {
+//       @content;
+//   }
+//   }@else {
+//     @media (min-width: #{$key}px) {
+
+//     }
+//   }
+// }
+
+@mixin mq($key) {
+    @if map.has-key($breakpoints, $key) {
+      $size: map.get($breakpoints, $key);
+  
+      @media (max-width: ($size - 1)) {
+        @debug "Max-width media query for #{$key} applied.";
+        @content;
+      }
+    } @else {
+      @media (min-width: 1px) {
+        @debug "Min-width media query fallback applied for #{$key}.";
+        @content;
+      }
+    }
+  }

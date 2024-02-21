@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import logo from '../assets/logotipo.png';
 import logoGithub from '../assets/icons-github.png';
 import logoLinkedin from '../assets/icons-linkedin.png';
+import iconMenu from '../assets/menu-icon.png';
 import portuguese from '../assets/icons-brazil.png';
 import english from '../assets/icons-usa.png';
 
@@ -57,6 +58,11 @@ function Header({ setLanguage, language }) {
             </li>))}
         </ul>
       </nav>
+      <button
+        className="menu-button"
+      >
+        <img src={ iconMenu } alt="Hamburguer menu  " />
+      </button>
       <div>
         <button onClick={ () => setLanguage('BR') }>
           <img src={ portuguese } alt="" width="25px" />
@@ -66,8 +72,18 @@ function Header({ setLanguage, language }) {
           <img src={ english } alt="" width="25px" />
           EN
         </button>
-        <img src={ logoGithub } alt="logo-github" width="25px" />
-        <img src={ logoLinkedin } alt="logo-linkedin" width="30px" />
+        <img
+          src={ logoGithub }
+          alt="logo-github"
+          width="25px"
+          className="contact-button"
+        />
+        <img
+          src={ logoLinkedin }
+          alt="logo-linkedin"
+          width="30px"
+          className="contact-button"
+        />
       </div>
     </header>
   );
