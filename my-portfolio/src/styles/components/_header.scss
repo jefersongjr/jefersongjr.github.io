@@ -3,12 +3,16 @@
 header {
   @include flexSpaceBeetween();
   background-color: $primary;
-  padding: 5px 120px;
-  @include mq(s) {
-    padding: 0 10px;
-  }
+  flex-flow: row wrap;
+  padding: 5px 100px;
   @include mq(l) {
-    padding: 0 50px;
+    padding: 0 20px;
+  }
+  .top-header {
+    @include flexSpaceBeetween();
+  }
+  .logo {
+    order: 1;
   }
   .mobile-menu {
     display: 'flex';
@@ -32,14 +36,28 @@ header {
      }
     @include mq(xs) {
       display: flex;
+      order: 2;
     }
   }
   nav {
     width: 50%;
+    display: flex;
+    margin: auto;
+    min-height: max-content;
+    order: 1;
+    flex-direction: column;
+    @include mq(xs) {
+      order: 4;
+      flex-grow: 1;
+      width: 70%;
+    }
     ul {
       @include flexSpaceBeetween();
       list-style: none;
       color: $secondary;
+      @include mq(xs){
+        flex-direction: column;
+      }
       li {
         display: flex;
         align-items: center;
@@ -60,6 +78,7 @@ header {
 
   div {
     @include flexSpaceBeetween();
+    order: 3;
     .contact-button {
       @include mq(s) {
         display: none;

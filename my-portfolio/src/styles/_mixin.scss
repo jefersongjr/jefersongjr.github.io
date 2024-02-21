@@ -8,20 +8,6 @@
     justify-content: space-between;
   }
 
-// @mixin mq($key) {
-//   @if map.has-key($breakpoints, $key) {
-//     $size: map.get($breakpoints, $key);
-
-//     @media (min-width: $size) {
-//       @content;
-//   }
-//   }@else {
-//     @media (min-width: #{$key}px) {
-
-//     }
-//   }
-// }
-
 @mixin mq($key) {
     @if map.has-key($breakpoints, $key) {
       $size: map.get($breakpoints, $key);

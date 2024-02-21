@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import logo from '../assets/logotipo.png';
 import logoGithub from '../assets/icons-github.png';
@@ -55,14 +55,10 @@ function Header({ setLanguage, language }) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 600) {
-        setMenuVisible(true); // Exiba o menu automaticamente em telas maiores que 600px
+        setMenuVisible(true);
       }
     };
-
-    // Adicione um ouvinte de evento de redimensionamento para monitorar mudanças no tamanho da tela
     window.addEventListener('resize', handleResize);
-
-    // Remova o ouvinte de evento ao desmontar o componente
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -70,24 +66,14 @@ function Header({ setLanguage, language }) {
 
   return (
     <header>
-      <img src={ logo } alt="meu logo" width="100px" />
-      <nav>
-        <button
-          onClick={ onClick }
-          className="menu-button"
-        >
-          <img src={ iconMenu } alt="Hamburguer menu  " />
-        </button>
-        <ul className={ menuVisible ? 'mobile-menu' : 'hidden' }>
-          {sections.map(({ name, href }) => (
-            <li key={ name[language] }>
-              <a href={ href }>
-                {name[language]}
-              </a>
-            </li>))}
-        </ul>
-      </nav>
-      <div>
+      <img src={ logo } alt="meu logo" className="logo" width="100px" />
+      <button
+        onClick={ onClick }
+        className="menu-button"
+      >
+        <img src={ iconMenu } alt="Hamburguer menu  " />
+      </button>
+      <div className="button-container">
         <button onClick={ () => setLanguage('BR') }>
           <img src={ portuguese } alt="" width="25px" />
           BR
@@ -109,6 +95,16 @@ function Header({ setLanguage, language }) {
           className="contact-button"
         />
       </div>
+      <nav>
+        <ul className={ menuVisible ? 'mobile-menu' : 'hidden' }>
+          {sections.map(({ name, href }) => (
+            <li key={ name[language] }>
+              <a href={ href }>
+                {name[language]}
+              </a>
+            </li>))}
+        </ul>
+      </nav>
     </header>
   );
 }

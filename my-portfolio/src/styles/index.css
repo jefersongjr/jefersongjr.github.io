@@ -5,17 +5,22 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
-  padding: 5px 120px;
-}
-@media (max-width: 575px) {
-  header {
-    padding: 0 10px;
-  }
+  flex-flow: row wrap;
+  padding: 5px 100px;
 }
 @media (max-width: 991px) {
   header {
-    padding: 0 50px;
+    padding: 0 20px;
   }
+}
+header .top-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .logo {
+  order: 1;
 }
 header .mobile-menu {
   display: "flex";
@@ -39,10 +44,24 @@ header .menu-button:active {
 @media (max-width: 1199px) {
   header .menu-button {
     display: flex;
+    order: 2;
   }
 }
 header nav {
   width: 50%;
+  display: flex;
+  margin: auto;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  order: 1;
+  flex-direction: column;
+}
+@media (max-width: 1199px) {
+  header nav {
+    order: 4;
+    flex-grow: 1;
+    width: 70%;
+  }
 }
 header nav ul {
   align-items: center;
@@ -51,6 +70,11 @@ header nav ul {
   justify-content: space-between;
   list-style: none;
   color: white;
+}
+@media (max-width: 1199px) {
+  header nav ul {
+    flex-direction: column;
+  }
 }
 header nav ul li {
   display: flex;
@@ -72,6 +96,7 @@ header div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  order: 3;
 }
 @media (max-width: 575px) {
   header div .contact-button {
