@@ -5,23 +5,29 @@ header {
   background-color: $primary;
   flex-flow: row wrap;
   padding: 5px 50px;
-  width: vw;
   border-bottom: 1px solid grey;
   @include mq(l) {
     padding: 0 20px;
   }
+
   .top-header {
     @include flexSpaceBeetween();
   }
+
   .logo {
     order: 1;
   }
+
   .mobile-menu {
-    display: 'flex';
+    display: flex;
+    @include mq(xs) {
+      display: flex;
+      order: 2;
+    }
   }
-  
+
   .hidden {
-    display: none;
+    display: flex;
   }
 
   .menu-button {
@@ -30,41 +36,49 @@ header {
     border: none;
     justify-content: center;
     &:hover {
-     background-color: $third;
+      background-color: $third;
     }
     &:active {
       width: 70px;
       background-color: darkviolet;
-     }
+    }
     @include mq(xs) {
       display: flex;
       order: 2;
     }
   }
+
   nav {
-    width: 50%;
+    width: 60%;
     display: flex;
-    margin: auto;
+    justify-content: center;
     min-height: max-content;
     order: 1;
-    flex-direction: column;
+    /* flex-direction: row;  // Esta linha é redundante */
     @include mq(xs) {
-      order: 4;
       display: none;
       flex-grow: 1;
       width: 70%;
+      order: 4;
     }
     ul {
-      @include flexSpaceBeetween();
+      display: flex;
+      justify-content: space-between;  // Remova esta linha
+      align-items: flex-start;
       list-style: none;
       color: $secondary;
-      @include mq(xs){
+        @include mq(xs) {
         flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: $primary;
       }
       li {
         display: flex;
         align-items: center;
-        height: 40px;
+        margin: 48px  ;
         &:hover {
           background-color: $third;
         }
@@ -77,16 +91,18 @@ header {
         }
       }
     }
-  }
+  } 
 
   div {
     @include flexSpaceBeetween();
     order: 3;
+
     .contact-button {
       @include mq(s) {
         display: none;
       }
     }
+
     button {
       display: flex;
       align-items: center;

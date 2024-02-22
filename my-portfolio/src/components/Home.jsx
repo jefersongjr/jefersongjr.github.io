@@ -1,6 +1,22 @@
+import PropTypes from 'prop-types';
 import perfil from '../assets/perfil.png';
 
-function Home() {
+const data = {
+  title: {
+    EN: 'full stack developer',
+    BR: 'desenvolvedor full stack',
+  },
+  text: {
+    EN: 'Building digital bridges, one line of code at a time.',
+    BR: 'Construindo pontes digitais, um código de cada vez.',
+  },
+  button: {
+    EN: 'lets talk',
+    BR: 'fale comigo',
+  },
+};
+
+function Home({ language }) {
   return (
     <section className="home-container">
       <div className="left-container">
@@ -9,14 +25,12 @@ function Home() {
           <h1>Jeferson Gomes</h1>
           <div className="line" />
           <h2>
-            Full Stack
-            <br />
-            Developer
+            {data.title[language]}
           </h2>
           <p>
-            Construindo pontes digitais, um código de cada vez.
+            {data.text[language]}
           </p>
-          <button>Lets talk</button>
+          <button>{data.button[language]}</button>
         </div>
       </div>
       <div className="right-container">
@@ -26,5 +40,9 @@ function Home() {
     </section>
   );
 }
+
+Home.propTypes = {
+  language: PropTypes.string.isRequired,
+};
 
 export default Home;

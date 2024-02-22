@@ -3,29 +3,57 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 650px;
   background-color: black;
-  div{
+  @include mq(xs){
+    flex-direction: column;
+    height: min-content;
+  }
+
+  .right-container  {
     display: flex;
     width: 50%;
-      img {
-        width: 70%;
-        height: 500px;
-        align-self: flex-end;
-        opacity: 0.8;
+    align-self: flex-end;
+    align-items: flex-end;
+    @include mq(xs){
+      width: 100%; 
+      justify-content: center;
+    }
+    img {
+      width: 700px;
+      height: 500px;
+      justify-self: flex-end;
+      opacity: 0.8;
+      @include mq(m){
+        width: 100%; /* Altere para ocupar 100% na versão móvel */
       }
+    }
   }
+
   .left-container {
     display: flex;
+    width: 50%;
+    justify-content: center;
     color: white;
-    flex-direction: column;
-    align-items: center;
-    width: 50%; 
-    position: relative;
+    @include mq(xs){
+      width: 100%; /* Altere para ocupar 100% na versão móvel */
+    }
     .text-container {
       display: flex;
       flex-direction: column;
-      height: 45vh;
+      height: 450px;
+      width: 500px;
+      @include mq(xs){
+        margin-top: 100px;
+        height: auto;
+        align-items: flex-start;
+      }
+      @include mq(m){
+        margin-top: 100px;
+        height: auto;
+        align-items: center;
+        font-size: 5px;
+      }
       h1 {
         font-family: 'Exo';
         font-weight: bold;
@@ -40,13 +68,17 @@ section {
         margin-bottom: 15px;
       }
       h2 {
-        /* Professional video editor */
         font-family: 'Exo';
         font-weight: 700;
         font-size: 80px;
         line-height: 70px;
         text-transform: uppercase;
         margin-bottom: 25px;
+        @include mq(m){
+          font-size: 35px;
+          line-height: 35px;
+          text-align: center;
+        }
       }
       p {
         font-family: 'Exo';
@@ -54,7 +86,14 @@ section {
         font-weight: 400;
         font-size: 18px;
         margin-bottom: 20px;
+        @include mq(m){
+          font-size: 16px;
+          line-height: 15px;
+          text-align: center;
+          width: 80%;
+        }
       }
+
       button {
         background-color: $third;
         border: none;
@@ -71,21 +110,26 @@ section {
         &:active {
           background-color: rgb(174, 53, 174);
         }
+        @include mq(xs){
+          margin-bottom: 25px;
+        }
       }
     }
   }
+  
   .right-gradient-circle {
     position: absolute;
     width: 340px;
     height: 480px;
     border-radius: 50% 0 0 50%;
-    right: -0 ;
+    right: -0;
     top: 350px;
     background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(240, 28, 255, 0.6) 36.9%, rgba(38, 255, 0, 0.6) 67.4%, rgba(195, 0, 255, 0.6) 100%);
     opacity: 0.3;
     overflow: hidden;
-    filter: blur(50px); 
+    filter: blur(50px);
   }
+
   .left-gradient-circle {
     position: absolute;
     width: 480px;

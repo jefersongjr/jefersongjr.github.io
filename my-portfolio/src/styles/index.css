@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 header {
@@ -8,7 +9,6 @@ header {
   background-color: black;
   flex-flow: row wrap;
   padding: 5px 50px;
-  width: vw;
   border-bottom: 1px solid grey;
 }
 @media (max-width: 991px) {
@@ -26,10 +26,16 @@ header .logo {
   order: 1;
 }
 header .mobile-menu {
-  display: "flex";
+  display: flex;
+}
+@media (max-width: 1199px) {
+  header .mobile-menu {
+    display: flex;
+    order: 2;
+  }
 }
 header .hidden {
-  display: none;
+  display: flex;
 }
 header .menu-button {
   display: none;
@@ -51,39 +57,43 @@ header .menu-button:active {
   }
 }
 header nav {
-  width: 50%;
+  width: 60%;
   display: flex;
-  margin: auto;
+  justify-content: center;
   min-height: -moz-max-content;
   min-height: max-content;
   order: 1;
-  flex-direction: column;
+  /* flex-direction: row;  // Esta linha é redundante */
 }
 @media (max-width: 1199px) {
   header nav {
-    order: 4;
     display: none;
     flex-grow: 1;
     width: 70%;
+    order: 4;
   }
 }
 header nav ul {
-  align-items: center;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   list-style: none;
   color: white;
 }
 @media (max-width: 1199px) {
   header nav ul {
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
   }
 }
 header nav ul li {
   display: flex;
   align-items: center;
-  height: 40px;
+  margin: 48px;
 }
 header nav ul li:hover {
   background-color: purple;
@@ -122,31 +132,70 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 650px;
   background-color: black;
 }
-section div {
+@media (max-width: 1199px) {
+  section {
+    flex-direction: column;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+section .right-container {
   display: flex;
   width: 50%;
-}
-section div img {
-  width: 70%;
-  height: 500px;
   align-self: flex-end;
+  align-items: flex-end;
+}
+@media (max-width: 1199px) {
+  section .right-container {
+    width: 100%;
+    justify-content: center;
+  }
+}
+section .right-container img {
+  width: 700px;
+  height: 500px;
+  justify-self: flex-end;
   opacity: 0.8;
+}
+@media (max-width: 767px) {
+  section .right-container img {
+    width: 100%; /* Altere para ocupar 100% na versão móvel */
+  }
 }
 section .left-container {
   display: flex;
-  color: white;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
-  position: relative;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 1199px) {
+  section .left-container {
+    width: 100%; /* Altere para ocupar 100% na versão móvel */
+  }
 }
 section .left-container .text-container {
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 450px;
+  width: 500px;
+}
+@media (max-width: 1199px) {
+  section .left-container .text-container {
+    margin-top: 100px;
+    height: auto;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  section .left-container .text-container {
+    margin-top: 100px;
+    height: auto;
+    align-items: center;
+    font-size: 5px;
+  }
 }
 section .left-container .text-container h1 {
   font-family: "Exo";
@@ -162,7 +211,6 @@ section .left-container .text-container .line {
   margin-bottom: 15px;
 }
 section .left-container .text-container h2 {
-  /* Professional video editor */
   font-family: "Exo";
   font-weight: 700;
   font-size: 80px;
@@ -170,12 +218,27 @@ section .left-container .text-container h2 {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+  section .left-container .text-container h2 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
 section .left-container .text-container p {
   font-family: "Exo";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  section .left-container .text-container p {
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    width: 80%;
+  }
 }
 section .left-container .text-container button {
   background-color: purple;
@@ -193,6 +256,11 @@ section .left-container .text-container button:hover {
 }
 section .left-container .text-container button:active {
   background-color: rgb(174, 53, 174);
+}
+@media (max-width: 1199px) {
+  section .left-container .text-container button {
+    margin-bottom: 25px;
+  }
 }
 section .right-gradient-circle {
   position: absolute;

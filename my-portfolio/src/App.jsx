@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header setLanguage={ setLanguage } language={ language } />
       <main>
-        <Home />
+        <Home language={ language } />
       </main>
     </div>
   );
