@@ -3,8 +3,8 @@ import perfil from '../assets/perfil.png';
 function Home() {
   return (
     <section className="home-container">
-      <div className="right-container">
-        <div className="right-gradient-overlay"> -</div>
+      <div className="left-container">
+        <div className="left-gradient-circle"> -</div>
         <div className="text-container">
           <h1>Jeferson Gomes</h1>
           <div className="line" />
@@ -13,12 +13,15 @@ function Home() {
             <br />
             Developer
           </h2>
-          <p>Brabo dos sites e mais algumas coisas</p>
+          <p>
+            Construindo pontes digitais, um código de cada vez.
+          </p>
+          <button>Lets talk</button>
         </div>
       </div>
-      <div className="left-container">
+      <div className="right-container">
         <img src={ perfil } alt="" />
-        <div className="left-gradient-circle" />
+        <div className="right-gradient-circle" />
       </div>
     </section>
   );

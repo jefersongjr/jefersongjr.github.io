@@ -7,7 +7,9 @@ header {
   justify-content: space-between;
   background-color: black;
   flex-flow: row wrap;
-  padding: 5px 100px;
+  padding: 5px 50px;
+  width: vw;
+  border-bottom: 1px solid grey;
 }
 @media (max-width: 991px) {
   header {
@@ -120,7 +122,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 75vh;
   background-color: black;
 }
 section div {
@@ -133,7 +135,7 @@ section div img {
   align-self: flex-end;
   opacity: 0.8;
 }
-section .right-container {
+section .left-container {
   display: flex;
   color: white;
   flex-direction: column;
@@ -141,48 +143,70 @@ section .right-container {
   width: 50%;
   position: relative;
 }
-section .right-container .text-container {
+section .left-container .text-container {
   display: flex;
   flex-direction: column;
   height: 45vh;
 }
-section .right-container .text-container h1 {
+section .left-container .text-container h1 {
   font-family: "Exo";
   font-weight: bold;
   font-size: 25px;
   line-height: 20px;
   margin-bottom: 25px;
 }
-section .right-container .text-container .line {
+section .left-container .text-container .line {
   width: 190px;
   height: 3px;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-bottom: 15px;
 }
-section .right-container .text-container h2 {
+section .left-container .text-container h2 {
   /* Professional video editor */
   font-family: "Exo";
   font-weight: 700;
   font-size: 80px;
   line-height: 70px;
   text-transform: uppercase;
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+  margin-bottom: 25px;
 }
-section .left-gradient-circle {
+section .left-container .text-container p {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+section .left-container .text-container button {
+  background-color: purple;
+  border: none;
+  height: 58px;
+  width: 300px;
+  color: white;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+section .left-container .text-container button:hover {
+  background-color: rgb(100, 11, 100);
+}
+section .left-container .text-container button:active {
+  background-color: rgb(174, 53, 174);
+}
+section .right-gradient-circle {
   position: absolute;
-  width: 480px;
+  width: 340px;
   height: 480px;
-  border-radius: 50%;
-  right: -150px;
+  border-radius: 50% 0 0 50%;
+  right: 0;
   top: 350px;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(240, 28, 255, 0.6) 36.9%, rgba(38, 255, 0, 0.6) 67.4%, rgba(195, 0, 255, 0.6) 100%);
   opacity: 0.3;
+  overflow: hidden;
   filter: blur(50px);
 }
-section .right-gradient-overlay {
+section .left-gradient-circle {
   position: absolute;
   width: 480px;
   border-radius: 50%;
@@ -191,6 +215,7 @@ section .right-gradient-overlay {
   top: -125px;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   opacity: 0.3;
+  overflow: hidden;
   filter: blur(50px);
 }
 

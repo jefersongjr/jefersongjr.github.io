@@ -3,7 +3,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 75vh;
   background-color: black;
   div{
     display: flex;
@@ -13,10 +13,9 @@ section {
         height: 500px;
         align-self: flex-end;
         opacity: 0.8;
-    
       }
   }
-  .right-container {
+  .left-container {
     display: flex;
     color: white;
     flex-direction: column;
@@ -47,28 +46,47 @@ section {
         font-size: 80px;
         line-height: 70px;
         text-transform: uppercase;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
+        margin-bottom: 25px;
+      }
+      p {
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: $third;
+        border: none;
+        height: 58px;
+        width: 300px;
+        color: $secondary;
+        font-family: 'Orbitron';
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: capitalize;
+        &:hover {
+          background-color: rgb(100, 11, 100);
+        }
+        &:active {
+          background-color: rgb(174, 53, 174);
+        }
       }
     }
   }
-  .left-gradient-circle {
+  .right-gradient-circle {
     position: absolute;
-    width: 480px;
+    width: 340px;
     height: 480px;
-    border-radius: 50%;
-    right: -150px ;
+    border-radius: 50% 0 0 50%;
+    right: -0 ;
     top: 350px;
     background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(240, 28, 255, 0.6) 36.9%, rgba(38, 255, 0, 0.6) 67.4%, rgba(195, 0, 255, 0.6) 100%);
     opacity: 0.3;
+    overflow: hidden;
     filter: blur(50px); 
   }
-  .right-gradient-overlay {
+  .left-gradient-circle {
     position: absolute;
     width: 480px;
     border-radius: 50%;
@@ -77,7 +95,7 @@ flex-grow: 0;
     top: -125px;
     background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
     opacity: 0.3;
+    overflow: hidden;
     filter: blur(50px);
   }
 }
-
