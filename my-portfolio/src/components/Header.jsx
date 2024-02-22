@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import logo from '../assets/logotipo.png';
 import logoGithub from '../assets/icons-github.png';
@@ -44,7 +44,6 @@ const sections = [
     href: '#contact',
   },
 ];
-const SIZE = 600;
 
 function Header({ setLanguage, language }) {
   const [menuVisible, setMenuVisible] = useState(true);
@@ -52,18 +51,6 @@ function Header({ setLanguage, language }) {
   const onClick = () => {
     setMenuVisible(!menuVisible);
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > SIZE) {
-        setMenuVisible(true);
-      }
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <header>

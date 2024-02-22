@@ -262,6 +262,11 @@ section .right-gradient-circle {
   overflow: hidden;
   filter: blur(50px);
 }
+@media (max-width: 991px) {
+  section .right-gradient-circle {
+    top: 300px;
+  }
+}
 section .left-gradient-circle {
   position: absolute;
   width: 480px;
@@ -273,6 +278,11 @@ section .left-gradient-circle {
   opacity: 0.3;
   overflow: hidden;
   filter: blur(50px);
+}
+@media (max-width: 991px) {
+  section .left-gradient-circle {
+    z-index: -1;
+  }
 }
 
 * {
