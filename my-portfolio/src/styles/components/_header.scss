@@ -4,30 +4,22 @@ header {
   @include flexSpaceBeetween();
   background-color: $primary;
   flex-flow: row wrap;
-  padding: 5px 50px;
-  border-bottom: 1px solid grey;
+  padding: 5px 100px;
   @include mq(l) {
     padding: 0 20px;
   }
-
   .top-header {
     @include flexSpaceBeetween();
   }
-
   .logo {
     order: 1;
   }
-
   .mobile-menu {
-    display: flex;
-    @include mq(xs) {
-      display: flex;
-      order: 2;
-    }
+    display: 'flex';
   }
-
+  
   .hidden {
-    display: flex;
+    display: none;
   }
 
   .menu-button {
@@ -36,49 +28,40 @@ header {
     border: none;
     justify-content: center;
     &:hover {
-      background-color: $third;
+     background-color: $third;
     }
     &:active {
       width: 70px;
       background-color: darkviolet;
-    }
+     }
     @include mq(xs) {
       display: flex;
       order: 2;
     }
   }
-
   nav {
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: center;
+    margin: auto;
     min-height: max-content;
     order: 1;
-    /* flex-direction: row;  // Esta linha é redundante */
+    flex-direction: column;
     @include mq(xs) {
-      display: none;
+      order: 4;
       flex-grow: 1;
       width: 70%;
-      order: 4;
     }
     ul {
-      display: flex;
-      justify-content: space-between;  // Remova esta linha
-      align-items: flex-start;
+      @include flexSpaceBeetween();
       list-style: none;
       color: $secondary;
-        @include mq(xs) {
+      @include mq(xs){
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: $primary;
       }
       li {
         display: flex;
         align-items: center;
-        margin: 48px  ;
+        height: 40px;
         &:hover {
           background-color: $third;
         }
@@ -91,18 +74,16 @@ header {
         }
       }
     }
-  } 
+  }
 
   div {
     @include flexSpaceBeetween();
     order: 3;
-
     .contact-button {
       @include mq(s) {
         display: none;
       }
     }
-
     button {
       display: flex;
       align-items: center;

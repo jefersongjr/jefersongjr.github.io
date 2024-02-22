@@ -8,8 +8,7 @@ header {
   justify-content: space-between;
   background-color: black;
   flex-flow: row wrap;
-  padding: 5px 50px;
-  border-bottom: 1px solid grey;
+  padding: 5px 100px;
 }
 @media (max-width: 991px) {
   header {
@@ -26,16 +25,10 @@ header .logo {
   order: 1;
 }
 header .mobile-menu {
-  display: flex;
-}
-@media (max-width: 1199px) {
-  header .mobile-menu {
-    display: flex;
-    order: 2;
-  }
+  display: "flex";
 }
 header .hidden {
-  display: flex;
+  display: none;
 }
 header .menu-button {
   display: none;
@@ -57,43 +50,38 @@ header .menu-button:active {
   }
 }
 header nav {
-  width: 60%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  margin: auto;
   min-height: -moz-max-content;
   min-height: max-content;
   order: 1;
-  /* flex-direction: row;  // Esta linha é redundante */
+  flex-direction: column;
 }
 @media (max-width: 1199px) {
   header nav {
-    display: none;
+    order: 4;
     flex-grow: 1;
     width: 70%;
-    order: 4;
   }
 }
 header nav ul {
+  align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   list-style: none;
   color: white;
 }
 @media (max-width: 1199px) {
   header nav ul {
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: black;
   }
 }
 header nav ul li {
   display: flex;
   align-items: center;
-  margin: 48px;
+  height: 40px;
 }
 header nav ul li:hover {
   background-color: purple;
