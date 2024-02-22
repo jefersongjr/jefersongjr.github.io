@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 header {
   align-items: center;
   display: flex;
@@ -59,6 +60,7 @@ header nav {
 @media (max-width: 1199px) {
   header nav {
     order: 4;
+    display: none;
     flex-grow: 1;
     width: 70%;
   }
@@ -111,6 +113,85 @@ header div button {
   justify-content: space-evenly;
   opacity: 0.8;
   width: 65px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: black;
+}
+section div {
+  display: flex;
+  width: 50%;
+}
+section div img {
+  width: 70%;
+  height: 500px;
+  align-self: flex-end;
+  opacity: 0.8;
+}
+section .right-container {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+section .right-container .text-container {
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+}
+section .right-container .text-container h1 {
+  font-family: "Exo";
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+section .right-container .text-container .line {
+  width: 190px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  margin-bottom: 15px;
+}
+section .right-container .text-container h2 {
+  /* Professional video editor */
+  font-family: "Exo";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 70px;
+  text-transform: uppercase;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+section .left-gradient-circle {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  right: -150px;
+  top: 350px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(240, 28, 255, 0.6) 36.9%, rgba(38, 255, 0, 0.6) 67.4%, rgba(195, 0, 255, 0.6) 100%);
+  opacity: 0.3;
+  filter: blur(50px);
+}
+section .right-gradient-overlay {
+  position: absolute;
+  width: 480px;
+  border-radius: 50%;
+  height: 480px;
+  left: -150px;
+  top: -125px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  opacity: 0.3;
+  filter: blur(50px);
 }
 
 * {

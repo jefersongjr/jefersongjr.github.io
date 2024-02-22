@@ -48,6 +48,7 @@ header {
     flex-direction: column;
     @include mq(xs) {
       order: 4;
+      display: none;
       flex-grow: 1;
       width: 70%;
     }
