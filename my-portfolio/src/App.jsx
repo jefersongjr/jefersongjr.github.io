@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header';
+import Home from './components/Home';
 
 function App() {
   const [language, setLanguage] = useState('EN');
@@ -8,8 +9,7 @@ function App() {
     <div>
       <Header setLanguage={ setLanguage } language={ language } />
       <main>
-        OLA
-        <p>{language}</p>
+        <Home language={ language } />
       </main>
     </div>
   );
