@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import logo from '../assets/logotipo.png';
-import logoGithub from '../assets/icons-github.png';
-import logoLinkedin from '../assets/icons-linkedin.png';
-import iconMenu from '../assets/menu-icon.png';
-import portuguese from '../assets/icons-brazil.png';
-import english from '../assets/icons-usa.png';
+import logo from '../assets/imgs/logotipo.png';
+import logoGithub from '../assets/icons/icons-github.png';
+import logoLinkedin from '../assets/icons/icons-linkedin.png';
+import iconMenu from '../assets/icons/menu-icon.png';
+import portuguese from '../assets/icons/icons-brazil.png';
+import english from '../assets/icons/icons-usa.png';
 
 const sections = [
   {

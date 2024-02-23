@@ -115,13 +115,16 @@ header div button {
   width: 65px;
 }
 
+.home-container {
+  background-color: black;
+}
+
 section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 650px;
-  background-color: black;
 }
 @media (max-width: 1249px) {
   section {
@@ -292,6 +295,7 @@ section .left-gradient-circle {
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  background-color: black;
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
@@ -353,7 +357,6 @@ section .left-gradient-circle {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
-  text-transform: capitalize;
 }
 @media (max-width: 575px) {
   .about-container .text-container p {
@@ -405,6 +408,42 @@ section .left-gradient-circle {
   border-radius: 50%;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-right: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../../assets/imgs/photo-1669054626218-f0b57b8ec632.avif");
+  color: white;
+}
+#projects h3 {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  #projects h3 {
+    font-size: 35px;
+  }
+}
+#projects .line-projects {
+  height: 3px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  margin-bottom: 15px;
+  width: 500px;
+}
+@media (max-width: 575px) {
+  #projects .line-projects {
+    width: 300px;
+  }
+}
+
+.card {
+  border: 1px solid grey;
 }
 
 * {

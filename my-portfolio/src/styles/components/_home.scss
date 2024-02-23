@@ -1,15 +1,16 @@
+.home-container {
+  background-color: black;
+}
 section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 650px;
-  background-color: black;
   @include mq(xs){
     flex-direction: column;
     height: min-content;
   }
-
   .right-container  {
     display: flex;
     width: 50%;
