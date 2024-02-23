@@ -18,7 +18,7 @@ const data = {
 
 function Home({ language }) {
   return (
-    <section className="home-container">
+    <section id="home" className="home-container">
       <div className="left-container">
         <div className="left-gradient-circle"> -</div>
         <div className="text-container">

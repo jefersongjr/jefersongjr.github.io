@@ -52,7 +52,7 @@ const data = {
 
 function About({ language }) {
   return (
-    <section className="about-container">
+    <section id="about" className="about-container">
       <h3>
         {data.title[language]}
       </h3>
