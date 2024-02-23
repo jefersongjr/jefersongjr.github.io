@@ -295,7 +295,7 @@ section .left-gradient-circle {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  background-color: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.99) 90.54%), url("../assets/imgs/code-bg.jpg");
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
@@ -414,7 +414,7 @@ section .left-gradient-circle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("../../assets/imgs/photo-1669054626218-f0b57b8ec632.avif");
+  background-color: black;
   color: white;
 }
 #projects h3 {
@@ -444,6 +444,7 @@ section .left-gradient-circle {
 
 .card {
   border: 1px solid grey;
+  height: 300px;
 }
 
 * {

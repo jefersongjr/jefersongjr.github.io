@@ -6,13 +6,13 @@
     align-items: center;
     justify-content: space-evenly;
     color: $secondary;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.99) 90.54%), url('../assets/imgs/code-bg.jpg');
     min-height: fit-content;
     h3 {
         @include titleSection();
     }
     .line-about {
-        @include divisor();
+        @include divisor()
         }
     .text-container {
         width: 1200px;

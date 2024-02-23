@@ -6,7 +6,6 @@ function Projects({ language }) {
       <h3>Principais Projetos</h3>
       <div className="line-projects" />
       <div className="projects-preview">
-        <img src="" alt="" />
         <div className="card">
           <img
             src="https://github.com/jefersongjr/internet-segura/blob/main/front-end/src/image/preview.gif?raw=true"
