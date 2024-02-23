@@ -1,0 +1,99 @@
+@import '../mixin';
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $secondary;
+    min-height: fit-content;
+    h3 {
+        font-family: 'Exo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        text-transform: uppercase;
+        @include mq(m){
+            font-size: 35px;
+          }
+    }
+    .line-about {
+        @include gradientLine();
+        width: 500px;
+        @include mq(s){
+            width: 300px;
+          }
+        }
+    .text-container {
+        width: 1200px;
+        height: 120px;
+        text-align: center;
+            @include mq(xs){
+            width: 700px;
+            height: fit-content;
+          }
+        @include mq(l){
+            width: 700px;
+          }
+          @include mq(m){
+            width: 500px;
+          }
+          @include mq(s){
+            width: 250px;
+          }
+        p {
+            font-family: 'Exo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: capitalize;
+            @include mq(s){
+                font-size: 15px;
+              }
+        }
+    }
+    .functions-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @include mq(xs){
+            margin-top: 50px;
+          }
+        ul {
+            list-style: none;
+            width: 80%;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row ;
+            @include mq(s){
+                flex-direction: column;
+              }
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Orbitron';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 25px;
+                text-transform: capitalize;
+                @include mq(s){
+                    margin-bottom: 10px;
+                  }
+                .ball {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background: $gradiente;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
