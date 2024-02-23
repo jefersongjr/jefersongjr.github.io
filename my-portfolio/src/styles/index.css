@@ -314,7 +314,7 @@ section .left-gradient-circle {
   margin-bottom: 15px;
   width: 500px;
 }
-@media (min-width: 1px) {
+@media (max-width: 575px) {
   .about-container .line-about {
     width: 300px;
   }
@@ -323,7 +323,6 @@ section .left-gradient-circle {
   width: 1200px;
   height: 120px;
   text-align: center;
-  margin-bottom: 30px;
 }
 @media (max-width: 1249px) {
   .about-container .text-container {
@@ -342,7 +341,7 @@ section .left-gradient-circle {
     width: 500px;
   }
 }
-@media (min-width: 1px) {
+@media (max-width: 575px) {
   .about-container .text-container {
     width: 250px;
   }
@@ -356,7 +355,7 @@ section .left-gradient-circle {
   text-align: center;
   text-transform: capitalize;
 }
-@media (min-width: 1px) {
+@media (max-width: 575px) {
   .about-container .text-container p {
     font-size: 15px;
   }
@@ -380,6 +379,11 @@ section .left-gradient-circle {
   flex-wrap: wrap;
   flex-direction: row;
 }
+@media (max-width: 575px) {
+  .about-container .functions-container ul {
+    flex-direction: column;
+  }
+}
 .about-container .functions-container ul li {
   display: flex;
   justify-content: space-between;
@@ -390,11 +394,17 @@ section .left-gradient-circle {
   line-height: 25px;
   text-transform: capitalize;
 }
+@media (max-width: 575px) {
+  .about-container .functions-container ul li {
+    margin-bottom: 10px;
+  }
+}
 .about-container .functions-container ul li .ball {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  margin-right: 20px;
 }
 
 * {

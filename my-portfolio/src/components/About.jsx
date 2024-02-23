@@ -21,6 +21,33 @@ const data = {
     códigos aparentemente simples em experiências extraordinárias.
      Vamos criar algo incrível juntos no mundo interativo da web!`,
   },
+  functions: [
+    {
+      name: {
+        EN: 'Responsive Websites',
+        BR: 'Sites Responsivos',
+      },
+    },
+    {
+      name: {
+        EN: 'REST API',
+        BR: 'Criação de API REST',
+      },
+    },
+    {
+      name: {
+        EN: 'Systems Integration',
+        BR: 'Integração de Sistemas',
+      },
+    },
+    {
+      name: {
+        EN: 'Database Management',
+        BR: 'Gerenciamento de Banco de Dados',
+      },
+    },
+
+  ],
 };
 
 function About({ language }) {
@@ -37,14 +64,11 @@ function About({ language }) {
       </div>
       <div className="functions-container">
         <ul>
-          <li>Sites Responsivos </li>
-          <li><div className='ball'/> </li>
-          <li>Criação de API REST</li>
-          <li><div className='ball'/> </li>
-          <li>Integração de Sistemas</li>
-          <li><div className='ball'/> </li>
-          <li>Gerenciamento de Banco de Dados</li>
-          <li><div className='ball'/> </li>
+          {data.functions.map((item) => (
+            <li key={ item.name[language] }>
+              <div className="ball" />
+              {item.name[language]}
+            </li>))}
         </ul>
       </div>
     </section>

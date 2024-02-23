@@ -21,7 +21,7 @@
     .line-about {
         @include gradientLine();
         width: 500px;
-        @include mq(section){
+        @include mq(s){
             width: 300px;
           }
         }
@@ -29,8 +29,7 @@
         width: 1200px;
         height: 120px;
         text-align: center;
-        margin-bottom: 30px;
-        @include mq(xs){
+            @include mq(xs){
             width: 700px;
             height: fit-content;
           }
@@ -40,7 +39,7 @@
           @include mq(m){
             width: 500px;
           }
-          @include mq(section){
+          @include mq(s){
             width: 250px;
           }
         p {
@@ -51,7 +50,7 @@
             line-height: 40px;
             text-align: center;
             text-transform: capitalize;
-            @include mq(section){
+            @include mq(s){
                 font-size: 15px;
               }
         }
@@ -71,6 +70,9 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row ;
+            @include mq(s){
+                flex-direction: column;
+              }
             li {
                 display: flex;
                 justify-content: space-between;
@@ -80,11 +82,15 @@
                 font-size: 17px;
                 line-height: 25px;
                 text-transform: capitalize;
+                @include mq(s){
+                    margin-bottom: 10px;
+                  }
                 .ball {
                     height: 30px;
                     width: 30px;
                     border-radius: 50%;
-                    background: $gradiente
+                    background: $gradiente;
+                    margin-right: 20px;
                 }
             }
         }
