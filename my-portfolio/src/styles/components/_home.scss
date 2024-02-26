@@ -129,7 +129,7 @@ section {
     overflow: hidden;
     filter: blur(50px);
     @include mq(l){
-      top: 300px;
+      top: 300  px;
     }
   }
 

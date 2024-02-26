@@ -1,4 +1,7 @@
-import safeInternet from '../assets/imgs/projectsPreview/'
+import safeInternet from '../assets/imgs/projectsPreview/safeInternet.png';
+
 const previewData = {
-    1: sonicTrunfo,
-  };
+  1: safeInternet,
+};
+
+export default previewData;

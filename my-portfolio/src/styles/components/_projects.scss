@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $primary;
+  min-height: fit-content;
   color: $secondary;
   h3 {
     @include titleSection();

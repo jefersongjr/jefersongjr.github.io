@@ -268,7 +268,7 @@ section .right-gradient-circle {
 }
 @media (max-width: 991px) {
   section .right-gradient-circle {
-    top: 300px;
+    top: 300 px;
   }
 }
 section .left-gradient-circle {
@@ -415,6 +415,8 @@ section .left-gradient-circle {
   flex-direction: column;
   justify-content: space-between;
   background-color: black;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   color: white;
 }
 #projects h3 {

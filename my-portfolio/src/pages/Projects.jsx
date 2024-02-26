@@ -1,7 +1,6 @@
 // Projects.jsx
 import PropTypes from 'prop-types';
 import projects from '../utils/dataProjects';
-import stacksData from '../utils/stackData';
 
 function Projects({ language }) {
   return (
@@ -11,6 +10,7 @@ function Projects({ language }) {
       <div className="projects-preview">
         {projects.map((project) => (
           <div key={ project.id } className="card">
+            <img src={project?.preview } alt="prévia do projeto" width="100%" />
             <h2>{project.title}</h2>
             <p>{project.description[language]}</p>
             <div>
