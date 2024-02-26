@@ -1,4 +1,7 @@
+// Projects.jsx
 import PropTypes from 'prop-types';
+import projects from '../utils/dataProjects';
+import stacksData from '../utils/stackData';
 
 function Projects({ language }) {
   return (
@@ -6,16 +9,30 @@ function Projects({ language }) {
       <h3>Principais Projetos</h3>
       <div className="line-projects" />
       <div className="projects-preview">
-        <div className="card">
-          <img
-            src="https://github.com/jefersongjr/internet-segura/blob/main/front-end/src/image/preview.gif?raw=true"
-            alt="imagem do card"
-            width="300px"
-          />
-          <div className="stacks-container" />
-          <p>{language}</p>
-        </div>
-
+        {projects.map((project) => (
+          <div key={ project.id } className="card">
+            <h2>{project.title}</h2>
+            <p>{project.description[language]}</p>
+            <div>
+              Tools:
+              {project.tools.map((tool) => (
+                <span key={ tool?.name }>
+                  {tool?.name}
+                  {' '}
+                  { tool?.icon}
+                </span>
+              ))}
+            </div>
+            <p>
+              Repository Link:
+              <a href={ project.repositoryLink }>{project.repositoryLink}</a>
+            </p>
+            <p>
+              Deploy Link:
+              <a href={ project.deployLink }>{project.deployLink}</a>
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );

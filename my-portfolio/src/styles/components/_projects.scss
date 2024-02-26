@@ -10,4 +10,9 @@
   .line-projects{
     @include divisor();
   }
+  .projects-preview{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+  }
 }

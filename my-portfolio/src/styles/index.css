@@ -441,10 +441,16 @@ section .left-gradient-circle {
     width: 300px;
   }
 }
+#projects .projects-preview {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
 
 .card {
   border: 1px solid grey;
   height: 300px;
+  width: 30%;
 }
 
 * {
