@@ -1,6 +1,10 @@
 .home-container {
   background-color: black;
   height: 650px;
+  @include mq(xs){
+    flex-direction: column;
+    height: min-content;
+  }
 }
 section {
   width: 100%;

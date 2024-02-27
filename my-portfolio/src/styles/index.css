@@ -119,6 +119,13 @@ header div button {
   background-color: black;
   height: 650px;
 }
+@media (max-width: 1249px) {
+  .home-container {
+    flex-direction: column;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
 
 section {
   width: 100%;

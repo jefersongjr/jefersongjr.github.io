@@ -29,7 +29,7 @@ const projects = [
     id: 2,
     title: 'Internet Segura',
     type: ['Front-end', 'Back-end'],
-    // screenshot: screenshotsData[1],
+    preview: dataImg[1],
     description: {
       EN: 'Projeto full stack sobre segurança online para crianças.',
       BR: 'Full-stack project on online safety for children.',
@@ -45,7 +45,7 @@ const projects = [
       stacksData.docker,
     ],
     repositoryLink: 'https://github.com/jefersongjr/internet-segura',
-    deployLink: 'https://raphaelalmeidamartins.github.io/sonic-trumps/',
+    deployLink: 'https://internet-segura.vercel.app/',
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ const projects = [
       stacksData.docker,
     ],
     repositoryLink: 'https://github.com/jefersongjr/internet-segura',
-    deployLink: 'https://raphaelalmeidamartins.github.io/sonic-trumps/',
+    deployLink: 'https://internet-segura.vercel.app/',
   },
   {
     id: 1,
@@ -95,7 +95,7 @@ const projects = [
     id: 2,
     title: 'Internet Segura',
     type: ['Front-end', 'Back-end'],
-    // screenshot: screenshotsData[1],
+    preview: dataImg[1],
     description: {
       EN: 'Projeto full stack sobre segurança online para crianças.',
       BR: 'Full-stack project on online safety for children.',
@@ -111,7 +111,7 @@ const projects = [
       stacksData.docker,
     ],
     repositoryLink: 'https://github.com/jefersongjr/internet-segura',
-    deployLink: 'https://raphaelalmeidamartins.github.io/sonic-trumps/',
+    deployLink: 'https://internet-segura.vercel.app/',
   },
   {
     id: 2,
@@ -133,7 +133,7 @@ const projects = [
       stacksData.docker,
     ],
     repositoryLink: 'https://github.com/jefersongjr/internet-segura',
-    deployLink: 'https://raphaelalmeidamartins.github.io/sonic-trumps/',
+    deployLink: 'https://internet-segura.vercel.app/',
   },
 ];
 
