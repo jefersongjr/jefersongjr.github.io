@@ -43,7 +43,7 @@ const data = {
     {
       name: {
         EN: 'Database Management',
-        BR: 'Gerenciamento de Banco de Dados',
+        BR: 'Banco de Dados',
       },
     },
 

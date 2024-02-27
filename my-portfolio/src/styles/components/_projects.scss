@@ -6,12 +6,20 @@
   color: $secondary;
   min-height: fit-content;
   font-family: 'Exo';
+  @include mq(m) {
+    padding-top: 50px;
+   }
+   @include mq(m) {
+     padding-top: 100px;
+    }
   h3 {
     @include titleSection();
+    margin-bottom: 25px;
   }
   
   .line-projects{
     @include divisor();
+    margin-bottom: 80px;
   }
   
   .projects-preview {

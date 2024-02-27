@@ -9,6 +9,12 @@
     color: $secondary;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.99) 90.54%), url('../assets/imgs/code-bg.jpg');
     min-height: fit-content;
+    @include mq(m) {
+     padding-top: 50px;
+    }
+    @include mq(m) {
+      padding-top: 100px;
+     }
     .title-container {
       display: flex;
       flex-direction: column;
@@ -58,6 +64,7 @@
         @include mq(xs){
             margin-top: 50px;
           }
+          
         ul {
             list-style: none;
             width: 80%;

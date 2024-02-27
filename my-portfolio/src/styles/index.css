@@ -311,6 +311,16 @@ section .left-gradient-circle {
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
+@media (max-width: 767px) {
+  .about-container {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    padding-top: 100px;
+  }
+}
 .about-container .title-container {
   display: flex;
   flex-direction: column;
@@ -438,12 +448,23 @@ section .left-gradient-circle {
   min-height: fit-content;
   font-family: "Exo";
 }
+@media (max-width: 767px) {
+  #projects {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #projects {
+    padding-top: 100px;
+  }
+}
 #projects h3 {
   font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 @media (max-width: 767px) {
   #projects h3 {
@@ -455,6 +476,7 @@ section .left-gradient-circle {
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-bottom: 15px;
   width: 500px;
+  margin-bottom: 80px;
 }
 @media (max-width: 575px) {
   #projects .line-projects {
@@ -489,6 +511,21 @@ section .left-gradient-circle {
   border-radius: 20px;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .card {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    width: 60%;
+  }
+}
+@media (max-width: 575px) {
+  .card {
+    width: 90%;
+  }
 }
 .card img {
   border-radius: 20px 20px 0 0;

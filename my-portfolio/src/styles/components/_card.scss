@@ -7,6 +7,15 @@
   border-radius: 20px;
   justify-content: space-between;
   margin-bottom: 40px;
+  @include mq(l) {
+    width: 40%;
+  }
+  @include mq(m) {
+    width: 60%;
+  }
+  @include mq(s) {
+    width: 90%;
+  }
   img {
     border-radius: 20px 20px 0 0;
   }
