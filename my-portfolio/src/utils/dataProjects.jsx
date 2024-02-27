@@ -246,7 +246,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Internet Segura',
+    title: 'jOjo POZE',
     type: ['Front-end', 'Back-end'],
     preview: dataImg[1],
     description: {
