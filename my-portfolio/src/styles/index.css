@@ -437,7 +437,6 @@ section .left-gradient-circle {
   min-height: -moz-fit-content;
   min-height: fit-content;
   font-family: "Exo";
-  /* Adicione uma classe específica para o slide para a esquerda */
 }
 #projects h3 {
   font-family: "Exo";
@@ -469,14 +468,16 @@ section .left-gradient-circle {
   justify-content: space-around;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  overflow-x: hidden;
-  transition: transform 0.5s ease;
+  opacity: 1;
+  transition: opacity 0.7s ease;
 }
-#projects .slide-right {
-  transform: translateX(-100%); /* Deslocar para a esquerda para revelar o próximo conjunto de projetos */
+#projects .change-projects {
+  opacity: 0.2;
 }
-#projects .slide-left {
-  transform: translateX(0); /* Deslocar para a direita para revelar o conjunto anterior de projetos */
+#projects .arrow-projects {
+  font-size: 50px;
+  color: white;
+  background-color: black;
 }
 
 .card {
