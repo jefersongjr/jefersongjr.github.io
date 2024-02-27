@@ -1,5 +1,7 @@
 // Projects.jsx
 import PropTypes from 'prop-types';
+import { FaGithub } from 'react-icons/fa';
+import { GrDeploy } from 'react-icons/gr';
 import projects from '../utils/dataProjects';
 
 function Projects({ language }) {
@@ -10,27 +12,30 @@ function Projects({ language }) {
       <div className="projects-preview">
         {projects.map((project) => (
           <div key={ project.id } className="card">
-            <img src={project?.preview } alt="prévia do projeto" width="100%" />
-            <h2>{project.title}</h2>
-            <p>{project.description[language]}</p>
-            <div>
-              Tools:
-              {project.tools.map((tool) => (
-                <span key={ tool?.name }>
-                  {tool?.name}
-                  {' '}
-                  { tool?.icon}
-                </span>
-              ))}
+            <img src={ project?.preview } alt="prévia do projeto" width="100%" />
+            <div className="info-project">
+              <h2>{project.title}</h2>
+              <p className="project-description">{project.description[language]}</p>
+              <div className="tools-container">
+                {project.tools.map((tool) => (
+                  <div key={ tool?.name } className="stack-name">
+                    <span className="icon-stack">{ tool?.icon }</span>
+                    {' '}
+                    <span>{tool?.name}</span>
+                  </div>
+                ))}
+              </div>
+
             </div>
-            <p>
-              Repository Link:
-              <a href={ project.repositoryLink }>{project.repositoryLink}</a>
-            </p>
-            <p>
-              Deploy Link:
-              <a href={ project.deployLink }>{project.deployLink}</a>
-            </p>
+            <div className="icon-link">
+              <a href={ project.repositoryLink } aria-label="GitHub Repository Link">
+                <FaGithub className="icon" />
+              </a>
+              <a href={ project.deployLink } aria-label="GitHub Repository Link">
+                <GrDeploy className="icon"/>
+              </a>
+
+            </div>
           </div>
         ))}
       </div>
