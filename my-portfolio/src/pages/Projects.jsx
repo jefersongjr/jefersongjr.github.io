@@ -57,10 +57,14 @@ function Projects({ language }) {
               <a href={ project.repositoryLink } aria-label="GitHub Repository Link">
                 <FaGithub className="icon" />
               </a>
-              <a href={ project.deployLink } aria-label="GitHub Repository Link">
-                <GrDeploy className="icon" />
-              </a>
-
+              { project.deployLink
+                 && (
+                   <a
+                     href={ project.deployLink }
+                     aria-label="GitHub Repository Link"
+                   >
+                     <GrDeploy className="icon" />
+                   </a>)}
             </div>
           </div>
         ))}
