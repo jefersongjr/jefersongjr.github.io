@@ -7,18 +7,18 @@ import projects from '../utils/dataProjects';
 const SIX = 6;
 
 function Projects({ language }) {
-  const [visibleProjects, setVisibleProjects] = useState(SIX);
+  const [startIndex, setStartIndex] = useState(0);
 
-  const loadMoreProjects = () => {
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + SIX);
+  const showNextProjects = () => {
+    setStartIndex((prevIndex) => prevIndex + SIX);
   };
 
   return (
     <section id="projects" className="projects-container">
       <h3>Principais Projetos</h3>
       <div className="line-projects" />
-      <div className="projects-preview">
-        {projects.slice(0, visibleProjects).map((project) => (
+      <div className={ `projects-preview ${startIndex > 0 ? 'slide-left' : ''}` }>
+        {projects.slice(startIndex, startIndex + SIX).map((project) => (
           <div key={ project.id } className="card">
             <img src={ project?.preview } alt="prévia do projeto" width="100%" />
             <div className="info-project">
@@ -47,6 +47,10 @@ function Projects({ language }) {
           </div>
         ))}
       </div>
+        <button className="load-more-button" onClick={ showNextProjects }>
+          Carregar Mais
+        </button>
+
     </section>
   );
 }
