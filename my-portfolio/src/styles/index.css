@@ -8,7 +8,10 @@ header {
   justify-content: space-between;
   background-color: black;
   flex-flow: row wrap;
+  position: fixed;
   padding: 5px 100px;
+  width: 90%;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   header {
@@ -118,6 +121,7 @@ header div button {
 .home-container {
   background-color: black;
   height: 650px;
+  padding-top: 100px;
 }
 @media (max-width: 1249px) {
   .home-container {

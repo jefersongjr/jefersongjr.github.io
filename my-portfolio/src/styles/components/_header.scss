@@ -4,7 +4,10 @@ header {
   @include flexSpaceBeetween();
   background-color: $primary;
   flex-flow: row wrap;
+  position: fixed;
   padding: 5px 100px;
+  width: 90%;
+  opacity: 0.8;
   @include mq(l) {
     padding: 0 20px;
   }
