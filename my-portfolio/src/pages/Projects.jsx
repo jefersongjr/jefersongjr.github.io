@@ -1,16 +1,24 @@
-// Projects.jsx
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 import { GrDeploy } from 'react-icons/gr';
 import projects from '../utils/dataProjects';
 
+const SIX = 6;
+
 function Projects({ language }) {
+  const [visibleProjects, setVisibleProjects] = useState(SIX);
+
+  const loadMoreProjects = () => {
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + SIX);
+  };
+
   return (
     <section id="projects" className="projects-container">
       <h3>Principais Projetos</h3>
       <div className="line-projects" />
       <div className="projects-preview">
-        {projects.map((project) => (
+        {projects.slice(0, visibleProjects).map((project) => (
           <div key={ project.id } className="card">
             <img src={ project?.preview } alt="prévia do projeto" width="100%" />
             <div className="info-project">
@@ -32,7 +40,7 @@ function Projects({ language }) {
                 <FaGithub className="icon" />
               </a>
               <a href={ project.deployLink } aria-label="GitHub Repository Link">
-                <GrDeploy className="icon"/>
+                <GrDeploy className="icon" />
               </a>
 
             </div>
