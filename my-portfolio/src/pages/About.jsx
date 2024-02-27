@@ -43,7 +43,7 @@ const data = {
     {
       name: {
         EN: 'Database Management',
-        BR: 'Gerenciamento de Banco de Dados',
+        BR: 'Banco de Dados',
       },
     },
 
@@ -53,10 +53,12 @@ const data = {
 function About({ language }) {
   return (
     <section id="about" className="about-container">
-      <h3>
-        {data.title[language]}
-      </h3>
-      <div className="line-about" />
+      <div className="title-container">
+        <h3>
+          {data.title[language]}
+        </h3>
+        <div className="line-about" />
+      </div>
       <div className="text-container">
         <p>
           {data.text[language]}

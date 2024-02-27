@@ -8,7 +8,10 @@ header {
   justify-content: space-between;
   background-color: black;
   flex-flow: row wrap;
+  position: fixed;
   padding: 5px 100px;
+  width: 90%;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   header {
@@ -115,13 +118,24 @@ header div button {
   width: 65px;
 }
 
+.home-container {
+  background-color: black;
+  height: 650px;
+  padding-top: 100px;
+}
+@media (max-width: 1249px) {
+  .home-container {
+    flex-direction: column;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+
 section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 650px;
-  background-color: black;
 }
 @media (max-width: 1249px) {
   section {
@@ -265,7 +279,7 @@ section .right-gradient-circle {
 }
 @media (max-width: 991px) {
   section .right-gradient-circle {
-    top: 300px;
+    top: 300 px;
   }
 }
 section .left-gradient-circle {
@@ -290,32 +304,50 @@ section .left-gradient-circle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 650px;
   justify-content: space-evenly;
   color: white;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.99) 90.54%), url("../assets/imgs/code-bg.jpg");
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
-.about-container h3 {
+@media (max-width: 767px) {
+  .about-container {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    padding-top: 100px;
+  }
+}
+.about-container .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+.about-container .title-container h3 {
   font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
-  line-height: 70px;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
-  .about-container h3 {
+  .about-container .title-container h3 {
     font-size: 35px;
   }
 }
-.about-container .line-about {
+.about-container .title-container .line-about {
   height: 3px;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-bottom: 15px;
   width: 500px;
 }
 @media (max-width: 575px) {
-  .about-container .line-about {
+  .about-container .title-container .line-about {
     width: 300px;
   }
 }
@@ -353,7 +385,6 @@ section .left-gradient-circle {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
-  text-transform: capitalize;
 }
 @media (max-width: 575px) {
   .about-container .text-container p {
@@ -405,6 +436,147 @@ section .left-gradient-circle {
   border-radius: 50%;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-right: 20px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  font-family: "Exo";
+}
+@media (max-width: 767px) {
+  #projects {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  #projects {
+    padding-top: 100px;
+  }
+}
+#projects h3 {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  #projects h3 {
+    font-size: 35px;
+  }
+}
+#projects .line-projects {
+  height: 3px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  margin-bottom: 15px;
+  width: 500px;
+  margin-bottom: 80px;
+}
+@media (max-width: 575px) {
+  #projects .line-projects {
+    width: 300px;
+  }
+}
+#projects .projects-preview {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-around;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+#projects .change-projects {
+  opacity: 0.2;
+}
+#projects .arrow-projects {
+  font-size: 50px;
+  color: white;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  width: 30%;
+  background-color: rgb(43, 43, 43);
+  border-radius: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .card {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    width: 60%;
+  }
+}
+@media (max-width: 575px) {
+  .card {
+    width: 90%;
+  }
+}
+.card img {
+  border-radius: 20px 20px 0 0;
+}
+.card .icon-link {
+  display: flex;
+  align-self: self-end;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.card .icon-link .icon {
+  font-size: 25px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.card .icon-link .icon:hover {
+  color: rgba(98, 255, 0, 0.6);
+}
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.card .project-description {
+  margin-bottom: 12px;
+}
+.card .info-project {
+  padding-left: 10px;
+}
+.card .info-project .tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card .info-project .tools-container .stack-name {
+  display: flex;
+  border-radius: 20%;
+  border: 1px solid #808080;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 6px;
+  margin-right: 5px;
+}
+.card .info-project .tools-container .stack-name .icon-stack {
+  margin-right: 2px;
+  font-size: 22px;
+}
+.card:hover {
+  border: 10px solid purple;
 }
 
 * {

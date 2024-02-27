@@ -1,0 +1,43 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary;
+  color: $secondary;
+  min-height: fit-content;
+  font-family: 'Exo';
+  @include mq(m) {
+    padding-top: 50px;
+   }
+   @include mq(m) {
+     padding-top: 100px;
+    }
+  h3 {
+    @include titleSection();
+    margin-bottom: 25px;
+  }
+  
+  .line-projects{
+    @include divisor();
+    margin-bottom: 80px;
+  }
+  
+  .projects-preview {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-around;
+    min-height: fit-content;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+
+  }
+  .change-projects {
+    opacity: 0.2;
+  }
+  .arrow-projects {
+    font-size: 50px;
+    color: $secondary;
+    background-color: black;
+  }
+}

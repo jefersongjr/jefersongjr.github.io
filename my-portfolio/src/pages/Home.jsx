@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import perfil from '../assets/perfil.png';
+import perfil from '../assets/imgs/perfil.png';
 
 const data = {
   title: {

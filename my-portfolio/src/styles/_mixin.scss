@@ -29,3 +29,22 @@
       }
     }
   }
+
+  @mixin titleSection  {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    @include mq(m){
+        font-size: 35px;
+      }
+}
+
+@mixin divisor {
+  @include gradientLine();
+  width: 500px;
+  @include mq(s){
+      width: 300px;
+    }
+  }
