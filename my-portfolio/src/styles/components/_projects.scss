@@ -3,17 +3,23 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: $primary;
-  min-height: fit-content;
   color: $secondary;
+  min-height: fit-content;
+  font-family: 'Exo';
   h3 {
     @include titleSection();
   }
+  
   .line-projects{
     @include divisor();
   }
-  .projects-preview{
+  
+  .projects-preview {
     display: flex;
+    flex-wrap: wrap;
     width: 70%;
     justify-content: space-around;
+    min-height: fit-content;
+
   }
 }
