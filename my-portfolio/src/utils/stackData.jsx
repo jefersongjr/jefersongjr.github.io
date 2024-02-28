@@ -7,7 +7,9 @@ import {
   SiEslint,
   SiTypescript,
   SiChai,
+  SiRedux,
   SiMysql,
+  SiJest,
   SiSequelize,
   SiMocha } from 'react-icons/si';
 import { RiJavascriptFill } from 'react-icons/ri';
@@ -30,6 +32,8 @@ const stacksData = {
   sinon: { name: 'Sinon', icon: <LuTestTube2 /> },
   mysql: { name: 'MySql', icon: <SiMysql /> },
   sequelize: { name: 'Sequelize', icon: <SiSequelize /> },
+  redux: { name: 'Redux', icon: <SiRedux /> },
+  jest: { name: 'Jest', icon: <SiJest /> },
 };
 
 export default stacksData;
