@@ -1,5 +1,12 @@
 import React from 'react';
-import { FaReact, FaNode, FaCss3Alt, FaDocker, FaHtml5 } from 'react-icons/fa6';
+import {
+  FaReact,
+  FaJava,
+  FaPython,
+  FaNode,
+  FaCss3Alt,
+  FaDocker,
+  FaHtml5 } from 'react-icons/fa6';
 import {
   SiExpress,
   SiPostgresql,
@@ -8,13 +15,17 @@ import {
   SiMongodb,
   SiMongoose,
   SiTypescript,
+  SiPytest,
   SiReactrouter,
   SiTestinglibrary,
   SiChai,
   SiRedux,
   SiMysql,
+  SiFoodpanda,
+  SiJunit5,
   SiJest,
   SiSequelize,
+  SiSpringboot,
   SiMocha } from 'react-icons/si';
 import { RiJavascriptFill } from 'react-icons/ri';
 import { LuTestTube2 } from 'react-icons/lu';
@@ -42,6 +53,14 @@ const stacksData = {
   jest: { name: 'Jest', icon: <SiJest /> },
   mongo: { name: 'MongoDB', icon: <SiMongodb /> },
   mongoose: { name: 'MongoDB', icon: <SiMongoose /> },
+  python: { name: 'Python', icon: <FaPython /> },
+  pygames: { name: 'PyGames', icon: <FaPython /> },
+  pytest: { name: 'PyTest', icon: <SiPytest /> },
+  pandas: { name: 'Pandas', icon: <SiFoodpanda /> },
+  java: { name: 'Java', icon: <FaJava /> },
+  spring: { name: 'SpringBoot', icon: <SiSpringboot /> },
+  junit: { name: 'JUnit5', icon: <SiJunit5 /> },
+  mockito: { name: 'Mockito', icon: <FaJava /> },
 };
 
 export default stacksData;
