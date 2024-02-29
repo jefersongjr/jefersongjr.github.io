@@ -5,6 +5,8 @@ import {
   SiPostgresql,
   SiAxios,
   SiEslint,
+  SiMongodb,
+  SiMongoose,
   SiTypescript,
   SiReactrouter,
   SiTestinglibrary,
@@ -38,6 +40,8 @@ const stacksData = {
   sequelize: { name: 'Sequelize', icon: <SiSequelize /> },
   redux: { name: 'Redux', icon: <SiRedux /> },
   jest: { name: 'Jest', icon: <SiJest /> },
+  mongo: { name: 'MongoDB', icon: <SiMongodb /> },
+  mongoose: { name: 'MongoDB', icon: <SiMongoose /> },
 };
 
 export default stacksData;
