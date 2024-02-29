@@ -212,10 +212,10 @@ const projects = [
     type: ['Data-Science'],
     preview: dataImg[11],
     description: {
-      EN: `Project performs ETL (Extraction, Transformation, and Loading) 
-      on data from the most played songs on Spotify to identify 
-      the top 50 artists with the highest streams.`,
-      BR: `projeto realiza ETL em dados de músicas mais tocadas
+      EN: `Project performs ETL (Extraction, Transformation, and Loading)
+      on data from the most played songs on Spotify to 
+      identify the top 50 artists with the highest streams.`,
+      BR: `Projeto em que realizo ETL em dados de músicas mais tocadas
       no Spotify para identificar os 50 artistas com mais streams.`,
     },
     tools: [
