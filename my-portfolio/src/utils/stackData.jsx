@@ -5,7 +5,11 @@ import {
   SiPostgresql,
   SiAxios,
   SiEslint,
+  SiMongodb,
+  SiMongoose,
   SiTypescript,
+  SiReactrouter,
+  SiTestinglibrary,
   SiChai,
   SiRedux,
   SiMysql,
@@ -19,6 +23,8 @@ const stacksData = {
   react: { name: 'ReactJs', icon: <FaReact /> },
   css: { name: 'CSS3', icon: <FaCss3Alt /> },
   html: { name: 'HTML5', icon: <FaHtml5 /> },
+  router: { name: 'React Router', icon: <SiReactrouter /> },
+  test: { name: 'Testing Library', icon: <SiTestinglibrary /> },
   js: { name: 'JavaScript', icon: <RiJavascriptFill /> },
   node: { name: 'NodeJs', icon: <FaNode /> },
   express: { name: 'Express', icon: <SiExpress /> },
@@ -34,6 +40,8 @@ const stacksData = {
   sequelize: { name: 'Sequelize', icon: <SiSequelize /> },
   redux: { name: 'Redux', icon: <SiRedux /> },
   jest: { name: 'Jest', icon: <SiJest /> },
+  mongo: { name: 'MongoDB', icon: <SiMongodb /> },
+  mongoose: { name: 'MongoDB', icon: <SiMongoose /> },
 };
 
 export default stacksData;
