@@ -8,4 +8,8 @@
   .line-about {
     @include divisor();
   }
+  .card-stacks-container {
+    @include flexSpaceBeetween();
+    background-color: chartreuse;
+  }
 }

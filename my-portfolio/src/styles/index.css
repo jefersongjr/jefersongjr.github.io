@@ -616,6 +616,13 @@ section .left-gradient-circle {
     width: 300px;
   }
 }
+.stacks-container .card-stacks-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: chartreuse;
+}
 
 * {
   margin: 0;
