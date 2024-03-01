@@ -58,7 +58,7 @@ const stacksData = {
   redux: { name: 'Redux', icon: <SiRedux /> },
   jest: { name: 'Jest', icon: <SiJest /> },
   mongo: { name: 'MongoDB', icon: <SiMongodb /> },
-  mongoose: { name: 'MongoDB', icon: <SiMongoose /> },
+  mongoose: { name: 'Mongoose', icon: <SiMongoose /> },
   python: { name: 'Python', icon: <FaPython /> },
   pygames: { name: 'PyGames', icon: <FaPython /> },
   pytest: { name: 'PyTest', icon: <SiPytest /> },
