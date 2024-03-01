@@ -11,6 +11,7 @@
     align-items: center;
       h3 {
         @include titleSection();
+        font-size: 35px;
         margin-bottom: 25px;
       }
       .line-about {
@@ -25,7 +26,28 @@
       background-color: $third;
       opacity: 0.7;
       width: 30%;
-
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid grey;
+        .icon {
+            height: 30px;
+            font-size: 35px;
+          }
+        &:hover{
+          font-size: 30px;
+          font-weight: 600;
+          background: linear-gradient(90deg, rgba(151, 0, 255, 1) 0%, rgba(247, 28, 255, 1) 36.9%, rgba(39, 184, 51, 1) 67.4%, rgba(98, 255, 0, 1) 100%);
+        }
+      }
+      h4 {
+        font-size: 35px;
+        text-transform: uppercase;
+      }
+   
     }
   }
 }
