@@ -19,12 +19,12 @@ const {
   mysql,
   postgre,
   mongo,
-  mongose } = stacksData;
+  mongoose } = stacksData;
 
 const skillsByCategory = {
   front: [html, css, js, react, router, typescript, redux, sass, tailwind, boot],
   back: [js, node, typescript, express, sequelize, docker,
-    python, mysql, postgre, mongo, mongose],
+    python, mysql, postgre, mongo, mongoose],
 };
 
 export default skillsByCategory;
