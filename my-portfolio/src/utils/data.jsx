@@ -32,7 +32,7 @@ const {
 
 const skillsByCategory = {
   front: [html, css, js, react, router, typescript, redux, sass, tailwind, boot],
-  back: [js, node, typescript, express, sequelize, docker, spring, java,
+  back: [js, node, express, sequelize, docker, spring, java,
     python, mysql, postgre, mongo, mongoose],
   test: [test, jest, chai, mocha, sinon, pytest, junit],
 };

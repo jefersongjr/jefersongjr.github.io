@@ -19,30 +19,30 @@ function Stacks({ language }) {
       </div>
       <div className="card-stacks-container">
         <div className="card-stacks">
-          <h4>Front End</h4>
+          <h4 className="front">Front End</h4>
           {front.map(({ name, icon }) => (
-            <div className={ name } key={ name }>
+            <div className="tag-skill" key={ name }>
               <span>{name}</span>
-              <span className={ `icon ${name}` }>{ icon }</span>
+              <span className="icon">{ icon }</span>
             </div>
           ))}
         </div>
 
         <div className="card-stacks">
           <h4>Back End</h4>
-          {back?.map((stack) => (
-            <div className={ stack.name } key={ stack.name }>
-              <span>{stack.name}</span>
-              {stack.icon}
+          {back?.map(({ name, icon }) => (
+            <div className="tag-skill" key={ name }>
+              <span>{name}</span>
+              <span className="icon">{ icon }</span>
             </div>
           ))}
         </div>
         <div className="card-stacks">
           <h4>Tests</h4>
-          {test?.map((stack) => (
-            <div className={ stack.name } key={ stack.name }>
-              <span>{stack.name}</span>
-              {stack.icon}
+          {test?.map(({ name, icon }) => (
+            <div className="tag-skill" key={ name }>
+              <span>{name}</span>
+              <span className="icon">{ icon }</span>
             </div>
           ))}
         </div>
