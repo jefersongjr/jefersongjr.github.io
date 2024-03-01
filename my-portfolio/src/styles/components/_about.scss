@@ -1,14 +1,11 @@
 @import '../mixin';
 
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include sectionPattern();
     height: 650px;
+    align-items: center;
     justify-content: space-evenly;
-    color: $secondary;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 90%, rgba(0, 0, 0, 0.99) 90.54%), url('../assets/imgs/code-bg.jpg');
-    min-height: fit-content;
     @include mq(m) {
      padding-top: 50px;
     }

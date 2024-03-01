@@ -1,0 +1,5 @@
+.stacks-container {
+  @include sectionPattern();
+  background-color: aqua;
+  height: 65px;
+}
