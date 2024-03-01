@@ -11,6 +11,7 @@ function Stacks({ language }) {
   return (
     <section id="stacks" className="stacks-container">
       <h3>{data.title[language]}</h3>
+      <div className="line-about" />
     </section>
   );
 }
