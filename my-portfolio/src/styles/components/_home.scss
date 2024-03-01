@@ -32,7 +32,7 @@ section {
       justify-self: flex-end;
       opacity: 0.8;
       @include mq(m){
-        width: 100%; /* Altere para ocupar 100% na versão móvel */
+        width: 100%; 
       }
     }
   }

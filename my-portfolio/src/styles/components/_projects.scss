@@ -1,10 +1,7 @@
 #projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include sectionPattern();
   background-color: $primary;
   color: $secondary;
-  min-height: fit-content;
   font-family: 'Exo';
   @include mq(m) {
     padding-top: 50px;

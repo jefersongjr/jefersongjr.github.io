@@ -48,3 +48,10 @@
       width: 300px;
     }
   }
+
+  @mixin sectionPattern {
+    color: $secondary;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+  }
