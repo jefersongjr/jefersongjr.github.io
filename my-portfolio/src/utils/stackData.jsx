@@ -36,7 +36,7 @@ import { LuTestTube2 } from 'react-icons/lu';
 const stacksData = {
   react: { name: 'ReactJs', icon: <FaReact /> },
   css: { name: 'CSS3', icon: <FaCss3Alt /> },
-  html: { name: 'FaSass', icon: <FaHtml5 /> },
+  html: { name: 'HTML5', icon: <FaHtml5 /> },
   sass: { name: 'Sass', icon: <FaSass /> },
   router: { name: 'React Router', icon: <SiReactrouter /> },
   tailwind: { name: 'TailwindCss', icon: <SiTailwindcss /> },
