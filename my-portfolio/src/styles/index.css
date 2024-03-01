@@ -605,6 +605,17 @@ section .left-gradient-circle {
     font-size: 35px;
   }
 }
+.stacks-container .line-about {
+  height: 3px;
+  background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
+  margin-bottom: 15px;
+  width: 500px;
+}
+@media (max-width: 575px) {
+  .stacks-container .line-about {
+    width: 300px;
+  }
+}
 
 * {
   margin: 0;

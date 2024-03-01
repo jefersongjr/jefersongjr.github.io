@@ -5,4 +5,7 @@
   h3 {
     @include titleSection();
   }
+  .line-about {
+    @include divisor();
+  }
 }
