@@ -590,6 +590,7 @@ section .left-gradient-circle {
   flex-direction: column;
   min-height: -moz-fit-content;
   min-height: fit-content;
+  padding-top: 60px;
   background-color: black;
   justify-content: space-evenly;
   font-family: "Exo";
@@ -606,7 +607,6 @@ section .left-gradient-circle {
   font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
-  font-size: 35px;
   margin-bottom: 25px;
 }
 @media (max-width: 767px) {
@@ -633,6 +633,11 @@ section .left-gradient-circle {
   width: 65%;
   height: 100%;
 }
+@media (max-width: 991px) {
+  .stacks-container .card-stacks-container {
+    flex-direction: column;
+  }
+}
 .stacks-container .card-stacks-container .card-stacks {
   display: flex;
   flex-direction: column;
@@ -642,6 +647,12 @@ section .left-gradient-circle {
   width: 30%;
   height: 550px;
 }
+@media (max-width: 991px) {
+  .stacks-container .card-stacks-container .card-stacks {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .stacks-container .card-stacks-container .card-stacks div {
   display: flex;
   align-items: center;
@@ -650,16 +661,35 @@ section .left-gradient-circle {
   padding-bottom: 5px;
   border-bottom: 1px solid grey;
 }
+@media (max-width: 1249px) {
+  .stacks-container .card-stacks-container .card-stacks div {
+    font-size: 20px;
+  }
+}
 .stacks-container .card-stacks-container .card-stacks div .icon {
   height: 30px;
-  font-size: 40px;
+  font-size: 35px;
+  margin-left: 10px;
+}
+@media (max-width: 1249px) {
+  .stacks-container .card-stacks-container .card-stacks div .icon {
+    height: 20px;
+    font-size: 25px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 991px) {
+  .stacks-container .card-stacks-container .card-stacks div .icon {
+    height: 20px;
+    font-size: 20px;
+  }
 }
 .stacks-container .card-stacks-container .card-stacks div:hover {
   font-size: 30px;
   font-weight: 600;
   background: linear-gradient(90deg, rgb(151, 0, 255) 0%, rgb(247, 28, 255) 36.9%, rgb(39, 184, 51) 67.4%, rgb(98, 255, 0) 100%);
 }
-.stacks-container .card-stacks-container .title-container {
+.stacks-container .card-stacks-container h4 {
   font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 15px;

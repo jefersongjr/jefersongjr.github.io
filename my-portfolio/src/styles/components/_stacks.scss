@@ -1,5 +1,6 @@
 .stacks-container {
   @include sectionPattern();
+  padding-top: 60px;
   background-color: black;
   justify-content: space-evenly;
   font-family: 'Exo';
@@ -12,7 +13,6 @@
 
     h3 {
       @include titleSection();
-      font-size: 35px;
       margin-bottom: 25px;
     }
 
@@ -29,6 +29,10 @@
     text-align: center;
     width: 65%;
     height: 100%;
+    @include mq(l){
+      flex-direction: column;
+     }
+    
   
     .card-stacks {
       display: flex;
@@ -38,6 +42,10 @@
       opacity: 0.7;
       width: 30%;
       height: 550px;
+      @include mq(l){
+        width: 100%;
+        margin-bottom: 20px;
+       }
   
       div {
         display: flex;
@@ -46,10 +54,23 @@
         width: 100%;
         padding-bottom: 5px;
         border-bottom: 1px solid grey;
+        @include mq(xs){
+          font-size: 20px;
+        }
   
         .icon {
           height: 30px;
-          font-size: 40px;
+          font-size: 35px;
+          margin-left: 10px;
+          @include mq(xs){
+            height: 20px;
+            font-size: 25px;
+            margin-left: 5px;
+          }
+          @include mq(l){
+            height: 20px;
+            font-size: 20px;
+          }
         }
   
         &:hover {
@@ -59,7 +80,7 @@
         }
       }
     }
-    .title-container {
+    h4 {
       font-size: 35px;
       text-transform: uppercase;
       margin-bottom: 15px;
