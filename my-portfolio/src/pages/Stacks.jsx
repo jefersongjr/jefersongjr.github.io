@@ -13,15 +13,17 @@ const { front, back, test } = skillsByCategory;
 function Stacks({ language }) {
   return (
     <section id="stacks" className="stacks-container">
-      <h3>{data.title[language]}</h3>
-      <div className="line-about" />
+      <div className="top-container">
+        <h3>{data.title[language]}</h3>
+        <div className="line-about" />
+      </div>
       <div className="card-stacks-container">
-        <div className="card-stacks-front">
+        <div className="card-stacks">
           <h4>Front End</h4>
           {front.map(({ name, icon }) => (
             <div className={ name } key={ name }>
               <span>{name}</span>
-              { icon }
+              <span className={ `icon ${name}` }>{ icon }</span>
             </div>
           ))}
         </div>
