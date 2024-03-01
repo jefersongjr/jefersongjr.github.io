@@ -6,6 +6,8 @@ import {
   FaNode,
   FaCss3Alt,
   FaDocker,
+  FaSass,
+  FaBootstrap,
   FaHtml5 } from 'react-icons/fa6';
 import {
   SiExpress,
@@ -21,6 +23,7 @@ import {
   SiChai,
   SiRedux,
   SiMysql,
+  SiTailwindcss,
   SiFoodpanda,
   SiJunit5,
   SiJest,
@@ -33,8 +36,11 @@ import { LuTestTube2 } from 'react-icons/lu';
 const stacksData = {
   react: { name: 'ReactJs', icon: <FaReact /> },
   css: { name: 'CSS3', icon: <FaCss3Alt /> },
-  html: { name: 'HTML5', icon: <FaHtml5 /> },
+  html: { name: 'FaSass', icon: <FaHtml5 /> },
+  sass: { name: 'Sass', icon: <FaSass /> },
   router: { name: 'React Router', icon: <SiReactrouter /> },
+  tailwind: { name: 'TailwindCss', icon: <SiTailwindcss /> },
+  boot: { name: 'Bootstrap', icon: <FaBootstrap /> },
   test: { name: 'Testing Library', icon: <SiTestinglibrary /> },
   js: { name: 'JavaScript', icon: <RiJavascriptFill /> },
   node: { name: 'NodeJs', icon: <FaNode /> },
