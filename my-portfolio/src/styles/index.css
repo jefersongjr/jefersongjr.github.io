@@ -592,27 +592,36 @@ section .left-gradient-circle {
   min-height: fit-content;
   background-color: black;
   height: 650px;
+  justify-content: space-evenly;
+  font-family: "Exo";
+  font-size: 25px;
 }
-.stacks-container h3 {
+.stacks-container .top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stacks-container .top-container h3 {
   font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 @media (max-width: 767px) {
-  .stacks-container h3 {
+  .stacks-container .top-container h3 {
     font-size: 35px;
   }
 }
-.stacks-container .line-about {
+.stacks-container .top-container .line-about {
   height: 3px;
   background: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-bottom: 15px;
   width: 500px;
 }
 @media (max-width: 575px) {
-  .stacks-container .line-about {
+  .stacks-container .top-container .line-about {
     width: 300px;
   }
 }
@@ -621,7 +630,13 @@ section .left-gradient-circle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: chartreuse;
+  text-align: center;
+  width: 65%;
+}
+.stacks-container .card-stacks-container .card-stacks {
+  background-color: purple;
+  opacity: 0.7;
+  width: 30%;
 }
 
 * {
