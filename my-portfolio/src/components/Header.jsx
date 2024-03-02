@@ -34,7 +34,7 @@ const sections = [
       EN: 'STACKS',
       BR: 'TECNOLOGIAS',
     },
-    href: '#projects',
+    href: '#stacks',
   },
   {
     name: {
