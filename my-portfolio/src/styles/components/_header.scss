@@ -7,6 +7,8 @@ header {
   position: fixed;
   padding: 5px 100px;
   width: 90%;
+  z-index: 1000; 
+
   opacity: 0.8;
   @include mq(l) {
     padding: 0 20px;
