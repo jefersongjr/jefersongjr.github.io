@@ -1,71 +1,114 @@
-@import '../mixin';
+  @import '../mixin';
 
-.contacts-container {
-    @include sectionPattern();
-    background-color: $primary;
-    color: $secondary;
-    font-family: 'Exo';
-    padding-top: 50px;
-    h3 {
-      @include titleSection();
-      margin-bottom: 50px;
-    }
-    .line-contacts {
-      @include divisor();
-      width: 50%;
-      margin-bottom: 45px ;
-    }
-    @include mq(m) {
+  .contacts-container {
+      @include sectionPattern();
+      background-color: $primary;
+      color: $secondary;
+      font-family: 'Exo';
       padding-top: 50px;
-     }
-     .forms-container {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      text-transform: uppercase;
-      font-size: 20px;
 
-      .label-message{
+      h3 {
+        @include titleSection();
+        margin-bottom: 50px;
+        @include mq(l) {
+        text-align: center
+        }
+        @include mq(s) {
+          text-align: center
+        }
+      }
+      .line-contacts {
+        @include divisor();
+        width: 50%;
+        margin-bottom: 45px ;
+      }
+
+      .forms-container {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        textarea {
+        flex-direction: column;
+        text-transform: uppercase;
+        width: 50%;
+        font-size: 20px;
+        @include mq(l) {
+          flex-direction: column;
+          width: 100%;
+          text-align: center
+        }
+
+        .label-message{
           display: flex;
-          font-size: 18px;
-          text-align: center  ;
-          background-color: $primary;
-          border: 1px solid #212121;
-          font-family: 'Exo';
-          color: $secondary;
-          width: 70%;
-          padding: 10px;
-          margin-bottom: 30px;
+          justify-content: space-around;
+          align-items: center;
+          @include mq(l) {
+            flex-direction: column;
+            width: 100%;
+            text-align: center
+          }
+          @include mq(s) {
+            flex-direction: column;
+            width: 100%;
+
+            text-align: center
+          }
+          textarea {
+            display: flex;
+            font-size: 18px;
+            text-align: center  ;
+            background-color: $primary;
+            border: 1px solid #212121;
+            font-family: 'Exo';
+            color: $secondary;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 30px;
+            @include mq(l) {
+              width: 80%;
+            }
+            @include mq(s) {
+              width: 67%;
+            }
+          }
         }
-      }
-  
-      .label-top {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 600px;
-        input {
-          font-size: 18px;
-          background-color: $primary;
-          border: 1px solid #212121;
-          text-align: center;
-          font-family: 'Exo';
-          color: $secondary;
-          width: 65%;
-          padding: 10px;
-        }
+    
+        .label-top {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 60%;
+          @include mq(l) {
+            flex-direction: column;
+            width: 100%;
+            text-align: center
+          }
+          input {
+            font-size: 18px;
+            background-color: $primary;
+            border: 1px solid #212121;
+            text-align: center;
+            font-family: 'Exo';
+            color: $secondary;
+            width: 65%;
+            padding: 10px;
+            @include mq(l) {
+              width: 80%;
+            }
+          }
 
 
+        }
+        .forms-top-container {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          margin-bottom: 20px;
+          @include mq(l) {
+            flex-direction: column;
+            text-align: center
+          }
+          @include mq(s) {
+            flex-direction: column;
+            text-align: center
+          }
+        }
       }
-      .forms-top-container {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        margin-bottom: 20px;
       }
-    }
-    }
