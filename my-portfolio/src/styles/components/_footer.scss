@@ -23,6 +23,10 @@
     border-radius: 50%;
     margin-left: 5px;
     padding: 10px;
+    background-color: $gradient;
     margin-bottom: 5px;
+    &:hover {
+      color: $third;
+    }
   }
 }
