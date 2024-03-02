@@ -83,6 +83,9 @@ header {
     @include flexSpaceBeetween();
     order: 3;
     .contact-button {
+      color: $secondary;
+      font-size: 32px;
+      margin-left: 6px;
       @include mq(s) {
         display: none;
       }

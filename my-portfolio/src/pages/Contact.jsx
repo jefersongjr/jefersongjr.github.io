@@ -30,7 +30,7 @@ const data = {
 
 function Contacts({ language }) {
   return (
-    <section id="contacts" className="contacts-container">
+    <section id="contact" className="contacts-container">
       <h3>{data.title[language]}</h3>
       <div className="line-contacts" />
       <form action="https://formspree.io/f/xayrjkoa" method="POST" className="forms-container">
