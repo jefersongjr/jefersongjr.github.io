@@ -5,8 +5,15 @@
     background-color: $primary;
     color: $secondary;
     font-family: 'Exo';
+    padding-top: 50px;
     h3 {
       @include titleSection();
+      margin-bottom: 50px;
+    }
+    .line-contacts {
+      @include divisor();
+      width: 50%;
+      margin-bottom: 45px ;
     }
     @include mq(m) {
       padding-top: 50px;
