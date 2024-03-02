@@ -695,6 +695,34 @@ section .left-gradient-circle {
   text-transform: uppercase;
 }
 
+.contacts-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: black;
+  color: white;
+  font-family: "Exo";
+}
+.contacts-container h3 {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .contacts-container h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-container {
+    padding-top: 50px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

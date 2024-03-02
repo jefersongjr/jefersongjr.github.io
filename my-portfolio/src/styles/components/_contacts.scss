@@ -1,0 +1,14 @@
+@import '../mixin';
+
+.contacts-container {
+    @include sectionPattern();
+    background-color: $primary;
+    color: $secondary;
+    font-family: 'Exo';
+    h3 {
+      @include titleSection();
+    }
+    @include mq(m) {
+      padding-top: 50px;
+     }
+    }
