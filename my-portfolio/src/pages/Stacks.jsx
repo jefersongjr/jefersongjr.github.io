@@ -15,7 +15,7 @@ function Stacks({ language }) {
     <section id="stacks" className="stacks-container">
       <div className="top-container">
         <h3>{data.title[language]}</h3>
-        <div className="line-about" />
+        <div className="line-stacks" />
       </div>
       <div className="card-stacks-container">
         <div className="card-stacks">
