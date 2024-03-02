@@ -35,7 +35,7 @@ function Contacts({ language }) {
       <div className="line-contacts" />
       <form action="https://formspree.io/f/xayrjkoa" method="POST" className="forms-container">
         <div className="forms-top-container">
-          <label className="label-name">
+          <label className="label-top">
             <span>{data.name[language]}</span>
             <input
               type="text"
@@ -43,7 +43,7 @@ function Contacts({ language }) {
               placeholder={ data.name_placeholder[language] }
             />
           </label>
-          <label className="label-email">
+          <label className="label-top">
             <span>{data.email[language]}</span>
             <input
               type="text"

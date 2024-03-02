@@ -755,13 +755,30 @@ section .left-gradient-circle {
   text-transform: uppercase;
   font-size: 20px;
 }
-.contacts-container .forms-container label {
+.contacts-container .forms-container .label-message {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacts-container .forms-container .label-message textarea {
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid #212121;
+  font-family: "Exo";
+  color: white;
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.contacts-container .forms-container .label-top {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 600px;
 }
-.contacts-container .forms-container label input {
+.contacts-container .forms-container .label-top input {
   font-size: 18px;
   background-color: black;
   border: 1px solid #212121;
@@ -770,12 +787,12 @@ section .left-gradient-circle {
   color: white;
   width: 65%;
   padding: 10px;
-  margin-right: 6px;
 }
 .contacts-container .forms-container .forms-top-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 * {
