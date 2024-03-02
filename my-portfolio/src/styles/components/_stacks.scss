@@ -4,6 +4,8 @@
   background-color: black;
   justify-content: space-evenly;
   font-family: 'Exo';
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.99) 80.54%), url('../assets/imgs/backpurple.jpg'); //#Foto de Jr Korpa na Unsplash
+  background-position: center;
   font-size: 25px;
   .end-divisor {
     @include gradientLine();
