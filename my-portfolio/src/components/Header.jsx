@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
@@ -45,8 +45,27 @@ const sections = [
   },
 ];
 
+const screen = 1250;
+
 function Header({ setLanguage, language }) {
   const [menuVisible, setMenuVisible] = useState(true);
+
+  // Esse função está fazendo o nav= display none quando renderiza a tela.
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth > screen) {
+        setMenuVisible(true);
+      } else {
+        setMenuVisible(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const onClick = () => {
     setMenuVisible(!menuVisible);
@@ -63,7 +82,7 @@ function Header({ setLanguage, language }) {
         onClick={ onClick }
         className="menu-button"
       >
-        <img src={ iconMenu } alt="Hamburguer menu  " />
+        <img src={ iconMenu } alt="Hamburguer menu" />
       </button>
       <div className="button-container">
         <button onClick={ () => setLanguage('BR') }>
@@ -83,8 +102,8 @@ function Header({ setLanguage, language }) {
           <FaLinkedin className="contact-button" />
         </a>
       </div>
-      <nav>
-        <ul className={ menuVisible ? 'mobile-menu' : 'hidden' }>
+      <nav className={ menuVisible ? 'mobile-menu' : 'hidden' }>
+        <ul>
           {sections.map(({ name, href }) => (
             <li key={ name[language] }>
               <a href={ href }>
