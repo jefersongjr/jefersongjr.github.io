@@ -11,6 +11,7 @@ header {
   position: fixed;
   padding: 5px 100px;
   width: 90%;
+  z-index: 1000;
   opacity: 0.8;
 }
 @media (max-width: 991px) {
@@ -26,9 +27,6 @@ header .top-header {
 }
 header .logo {
   order: 1;
-}
-header .mobile-menu {
-  display: "flex";
 }
 header .hidden {
   display: none;
@@ -66,6 +64,9 @@ header nav {
     order: 4;
     flex-grow: 1;
     width: 70%;
+  }
+  header nav .hidden {
+    display: none;
   }
 }
 header nav ul {
@@ -647,6 +648,8 @@ section .left-gradient-circle {
   text-align: center;
   width: 65%;
   height: 100%;
+  position: relative;
+  z-index: 1;
   margin-bottom: 100px;
 }
 @media (max-width: 991px) {
@@ -910,7 +913,11 @@ section .left-gradient-circle {
   border-radius: 50%;
   margin-left: 5px;
   padding: 10px;
+  background-color: linear-gradient(90deg, rgba(151, 0, 255, 0.6) 0%, rgba(247, 28, 255, 0.6) 36.9%, rgba(39, 184, 51, 0.6) 67.4%, rgba(98, 255, 0, 0.6) 100%);
   margin-bottom: 5px;
+}
+.footer-container .contact-button:hover {
+  color: purple;
 }
 
 * {

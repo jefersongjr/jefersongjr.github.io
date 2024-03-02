@@ -37,6 +37,8 @@
     text-align: center;
     width: 65%;
     height: 100%;
+    position: relative;
+    z-index: 1;
     margin-bottom: 100px;
     @include mq(l) {
       flex-direction: column;

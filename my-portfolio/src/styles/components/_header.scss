@@ -7,6 +7,8 @@ header {
   position: fixed;
   padding: 5px 100px;
   width: 90%;
+  z-index: 1000; 
+
   opacity: 0.8;
   @include mq(l) {
     padding: 0 20px;
@@ -17,10 +19,7 @@ header {
   .logo {
     order: 1;
   }
-  .mobile-menu {
-    display: 'flex';
-  }
-  
+
   .hidden {
     display: none;
   }
@@ -31,12 +30,12 @@ header {
     border: none;
     justify-content: center;
     &:hover {
-     background-color: $third;
+      background-color: $third;
     }
     &:active {
       width: 70px;
       background-color: darkviolet;
-     }
+    }
     @include mq(xs) {
       display: flex;
       order: 2;
@@ -50,6 +49,9 @@ header {
     order: 1;
     flex-direction: column;
     @include mq(xs) {
+      .hidden {
+        display: none;
+      }
       order: 4;
       flex-grow: 1;
       width: 70%;
@@ -58,7 +60,7 @@ header {
       @include flexSpaceBeetween();
       list-style: none;
       color: $secondary;
-      @include mq(xs){
+      @include mq(xs) {
         flex-direction: column;
       }
       li {
@@ -99,5 +101,5 @@ header {
       opacity: 0.8;
       width: 65px;
     }
-  };
+  }
 }
