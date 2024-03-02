@@ -33,20 +33,28 @@ function Contacts({ language }) {
     <section id="contacts" className="contacts-container">
       <h3>{data.title[language]}</h3>
       <div className="line-contacts" />
-      <form action="https://formspree.io/jeferson_gjr@hotmail.com" method="POST" className="forms-container">
+      <form action="https://formspree.io/f/xayrjkoa" method="POST" className="forms-container">
         <div className="forms-top-container">
           <label className="label-name">
             {data.name[language]}
-            <input type="text" placeholder={ data.name_placeholder[language] } />
+            <input
+              type="text"
+              name="name"
+              placeholder={ data.name_placeholder[language] }
+            />
           </label>
           <label className="label-email">
             {data.name[language]}
-            <input type="text" placeholder={ data.name_placeholder[language] } />
+            <input
+              type="text"
+              name="_replyto"
+              placeholder={ data.name_placeholder[language] }
+            />
           </label>
         </div>
         <label className="label-message">
           {data.interest[language]}
-          <input type="text" placeholder={ data.interest_placeholder[language] } />
+          <textarea name="message" placeholder={ data.interest_placeholder[language] } />
         </label>
         <button type="submit">Enviar</button>
       </form>
