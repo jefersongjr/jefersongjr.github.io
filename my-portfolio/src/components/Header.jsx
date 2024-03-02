@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 import logo from '../assets/imgs/logotipo.png';
-import logoGithub from '../assets/icons/icons-github.png';
-import logoLinkedin from '../assets/icons/icons-linkedin.png';
 import iconMenu from '../assets/icons/menu-icon.png';
 import portuguese from '../assets/icons/icons-brazil.png';
 import english from '../assets/icons/icons-usa.png';
@@ -54,6 +54,10 @@ function Header({ setLanguage, language }) {
 
   return (
     <header>
+      <Helmet>
+        <title>Jeferson Gomes</title>
+        <link rel="icon" type="image/png" href={ logo } sizes="64x32" />
+      </Helmet>
       <img src={ logo } alt="meu logo" className="logo" width="100px" />
       <button
         onClick={ onClick }
@@ -70,18 +74,14 @@ function Header({ setLanguage, language }) {
           <img src={ english } alt="" width="25px" />
           EN
         </button>
-        <img
-          src={ logoGithub }
-          alt="logo-github"
-          width="25px"
-          className="contact-button"
-        />
-        <img
-          src={ logoLinkedin }
-          alt="logo-linkedin"
-          width="30px"
-          className="contact-button"
-        />
+        <a href="https://github.com/jefersongjr" aria-label="github-icon" target="_blank"><FaGithub className="contact-button" /></a>
+        <a
+          href="https://www.linkedin.com/in/jefersongjr/"
+          aria-label="linkedin-icon"
+          target="_blank"
+        >
+          <FaLinkedin className="contact-button" />
+        </a>
       </div>
       <nav>
         <ul className={ menuVisible ? 'mobile-menu' : 'hidden' }>
