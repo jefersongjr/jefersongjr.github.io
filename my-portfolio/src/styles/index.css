@@ -721,6 +721,7 @@ section .left-gradient-circle {
   color: white;
   font-family: "Exo";
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 .contacts-container button {
   background-color: purple;
@@ -881,6 +882,35 @@ section .left-gradient-circle {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.footer-container {
+  border-top: 3px solid rgb(52, 49, 49);
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1.9;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container p {
+  font-size: 16px;
+  color: white;
+  font-family: "Orbitron";
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.footer-container .contact-button {
+  font-size: 35px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-left: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 * {
