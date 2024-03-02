@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Stacks from './pages/Stacks';
 import Contacts from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [language, setLanguage] = useState('EN');
@@ -19,6 +20,7 @@ function App() {
         <Stacks language={ language } />
         <Contacts language={ language } />
       </main>
+      <Footer language={ language } />
     </div>
   );
 }
