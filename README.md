@@ -1,4 +1,5 @@
 # Meu Portfólio :computer:
+![preview](
 
 ##  🚀📋 Sobre:
 Bem-vindo ao meu portfólio web!<br> Este é um projeto pessoal onde compartilho informações sobre mim, meus projetos e habilidades. <br>Sinta-se à vontade para explorar!
