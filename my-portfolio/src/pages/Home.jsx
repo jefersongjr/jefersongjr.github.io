@@ -17,6 +17,12 @@ const data = {
 };
 
 function Home({ language }) {
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="home" className="home-container">
       <div className="left-container">
@@ -30,7 +36,7 @@ function Home({ language }) {
           <p>
             {data.text[language]}
           </p>
-          <button>{data.button[language]}</button>
+          <button onClick={ () => scrollToContact() }>{data.button[language] }</button>
         </div>
       </div>
       <div className="right-container">
