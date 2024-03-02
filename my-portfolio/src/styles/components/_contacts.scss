@@ -5,8 +5,28 @@
       background-color: $primary;
       color: $secondary;
       font-family: 'Exo';
-      padding-top: 50px;
-
+      padding-top: 50px;  
+      button{
+        background-color: $third;
+        border: none;
+        height: 58px;
+        width: 100%;
+        color: $secondary;
+        font-family: 'Orbitron';
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: auto;
+        @include mq(l) {
+          width: 80%;
+          }
+        &:hover {
+          background-color: rgb(100, 11, 100);
+        }
+        &:active {
+          background-color: rgb(174, 53, 174);
+        }
+      }
       h3 {
         @include titleSection();
         margin-bottom: 50px;

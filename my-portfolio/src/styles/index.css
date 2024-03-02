@@ -717,6 +717,29 @@ section .left-gradient-circle {
   font-family: "Exo";
   padding-top: 50px;
 }
+.contacts-container button {
+  background-color: purple;
+  border: none;
+  height: 58px;
+  width: 100%;
+  color: white;
+  font-family: "Orbitron";
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .contacts-container button {
+    width: 80%;
+  }
+}
+.contacts-container button:hover {
+  background-color: rgb(100, 11, 100);
+}
+.contacts-container button:active {
+  background-color: rgb(174, 53, 174);
+}
 .contacts-container h3 {
   font-family: "Exo";
   font-style: normal;
