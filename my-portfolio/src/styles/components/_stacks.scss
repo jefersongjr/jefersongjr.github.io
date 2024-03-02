@@ -29,7 +29,7 @@
     text-align: center;
     width: 65%;
     height: 100%;
-    @include mq(l){
+    @include mq(l) {
       flex-direction: column;
      }
     
