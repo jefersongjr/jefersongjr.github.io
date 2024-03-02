@@ -4,7 +4,15 @@
   background-color: black;
   justify-content: space-evenly;
   font-family: 'Exo';
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.99) 80.54%), url('../assets/imgs/backpurple.jpg'); //#Foto de Jr Korpa na Unsplash
+  background-position: center;
   font-size: 25px;
+  .end-divisor {
+    @include gradientLine();
+    width: 80%;
+    height: 50px;
+    opacity: 0.7;
+  }
 
   .top-container {
     display: flex;
@@ -16,7 +24,7 @@
       margin-bottom: 25px;
     }
 
-    .line-about {
+    .line-stacks {
       @include divisor();
       margin-bottom: 60px;
 
@@ -29,6 +37,7 @@
     text-align: center;
     width: 65%;
     height: 100%;
+    margin-bottom: 100px;
     @include mq(l) {
       flex-direction: column;
      }

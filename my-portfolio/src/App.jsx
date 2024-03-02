@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Stacks from './pages/Stacks';
+import Contacts from './pages/Contact';
 
 function App() {
   const [language, setLanguage] = useState('EN');
@@ -16,6 +17,7 @@ function App() {
         <About language={ language } />
         <Projects language={ language } />
         <Stacks language={ language } />
+        <Contacts language={ language } />
       </main>
     </div>
   );
