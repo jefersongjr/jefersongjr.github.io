@@ -752,6 +752,25 @@ section .left-gradient-circle {
   display: flex;
   flex-direction: column;
   width: 50%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.contacts-container .forms-container label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+.contacts-container .forms-container label input {
+  font-size: 18px;
+  background-color: black;
+  border: 1px solid #212121;
+  text-align: center;
+  font-family: "Exo";
+  color: white;
+  width: 65%;
+  padding: 10px;
+  margin-right: 6px;
 }
 .contacts-container .forms-container .forms-top-container {
   display: flex;

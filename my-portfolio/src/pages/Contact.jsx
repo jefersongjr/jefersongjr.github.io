@@ -15,8 +15,8 @@ const data = {
     BR: 'Nome',
   },
   email: {
-    EN: 'and my email is',
-    BR: 'e meu email é',
+    EN: 'my email is',
+    BR: 'meu email é',
   },
   interest: {
     EN: 'i am interested in',
@@ -36,7 +36,7 @@ function Contacts({ language }) {
       <form action="https://formspree.io/f/xayrjkoa" method="POST" className="forms-container">
         <div className="forms-top-container">
           <label className="label-name">
-            {data.name[language]}
+            <span>{data.name[language]}</span>
             <input
               type="text"
               name="name"
@@ -44,7 +44,7 @@ function Contacts({ language }) {
             />
           </label>
           <label className="label-email">
-            {data.name[language]}
+            <span>{data.email[language]}</span>
             <input
               type="text"
               name="_replyto"

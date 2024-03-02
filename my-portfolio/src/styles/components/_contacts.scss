@@ -18,10 +18,31 @@
     @include mq(m) {
       padding-top: 50px;
      }
-    .forms-container {
+     .forms-container {
       display: flex;
       flex-direction: column;
       width: 50%;
+      text-transform: uppercase;
+      font-size: 20px;
+  
+      label {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 600px;
+        input {
+          font-size: 18px;
+          background-color: $primary;
+          border: 1px solid #212121;
+          text-align: center;
+          font-family: 'Exo';
+          color: $secondary;
+          width: 65%;
+          padding: 10px;
+          margin-right: 6px;
+        }
+
+      }
       .forms-top-container {
         display: flex;
         justify-content: space-around;
