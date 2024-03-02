@@ -47,6 +47,8 @@ function Stacks({ language }) {
           ))}
         </div>
       </div>
+      <div className="end-divisor" />
+
     </section>
   );
 }
